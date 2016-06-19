@@ -89,7 +89,7 @@ bindsym $mod+d exec dmenu_run
 assign [class="XTerm"] 1: 
 assign [class="Firefox"] 2: 
 assign [class="Subl3"] 3: 
-assign [class="vlc"] 4: 
+assign [class="Vlc"] 4: 
 
 ####################
 # i3 Keybinding
