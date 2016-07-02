@@ -18,7 +18,7 @@ TEXT
 {"full_text": "${if_existing /proc/net/route wlp3s0}${wireless_essid wlp3s0} ${wireless_link_qual_perc wlp3s0}%${endif}", "color":"\#00AAAA"},
 {"full_text": ": ${exec .scripts/bat_icon.sh}", "color":"\#254AB8"},
 {"full_text": ": ${exec .scripts/vol.sh}", "color":"\#6600cc"},
-{"full_text": ": ${fs_free}/${fs_size}", "color":"\#ff0066"},
+{"full_text": ": ${fs_free /home}/${fs_size /home}", "color":"\#ff0066"},
 {"full_text": "${time %a, %m-%d-%Y}", "color":"\#afc4db"},
 {"full_text": " ${time %H:%M}", "color":"\#8f9d6a"}
 ],

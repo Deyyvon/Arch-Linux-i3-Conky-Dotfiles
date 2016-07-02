@@ -4,8 +4,8 @@
 # icon representing said capacity in the
 # status bar.
 
-STATUS=`cat /sys/class/power_supply/BAT1/status`
-AVG=`cat /sys/class/power_supply/BAT1/capacity`
+STATUS=`cat /sys/class/power_supply/BAT0/status`
+AVG=`cat /sys/class/power_supply/BAT0/capacity`
 
 if [ "$STATUS" == "Discharging" ]; then
 	if (($AVG >= 80)); then

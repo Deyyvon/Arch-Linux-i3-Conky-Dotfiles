@@ -1,4 +1,5 @@
 XTerm*Background: black
 XTerm*Foreground: white
-XTerm*faceName: Terminus:size=10
+#XTerm*faceName: Terminus:size=10
+XTerm*faceName: DejaVu:size=10
 XTerm*font: 7x13
