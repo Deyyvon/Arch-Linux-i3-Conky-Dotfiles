@@ -35,6 +35,9 @@ fi
 # Set keyboard layout to US
 setxkbmap us
 
+# Turn on numlock
+numlockx &
+
 # Execute external monitor script
 ~/.scripts/ext_monitor.sh
 
