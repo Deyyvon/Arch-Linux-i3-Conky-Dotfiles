@@ -58,3 +58,12 @@ vncserver :1 &
 
 # Launch i3
 exec dbus-launch i3
+
+###################
+# KDE
+###################
+# Execute KDE desktop environment with logs
+#exec startkde >> ~/kdelog-$(date +'%F-%k-%M-%S') 2>&1
+
+# Launch KDE
+#exec startkde
