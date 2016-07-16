@@ -117,6 +117,7 @@ if ! shopt -oq posix; then
 fi
 
 export EDITOR=subl3
+export PATH="$PATH:~/bin"
 
 # Display ASCII art and system information
 screenfetch
