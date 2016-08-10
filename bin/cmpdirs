@@ -1,0 +1,31 @@
+#!/bin/sh
+# This script compares two directories and returns the differences
+# into Differences.txt in the directory of this script.
+
+# Get current directory script is in
+SCRIPTPATH=$(dirname $0)
+echo $SCRIPTPATH
+
+# Clear terminal window
+clear
+
+# Identify user running script
+echo "Running script as $USER."
+echo
+
+# Get first directory
+echo "Enter Directory 1: "
+read -r dir1
+echo
+
+# Get second directory
+echo "Enter Directory 2: "
+read -r dir2
+echo
+
+# Compare directory differences, sent to Differences.txt
+echo "Comparing differences between directories..."
+echo "Differences between directories:" > $SCRIPTPATH/Differences.txt
+echo >> $SCRIPTPATH/Differences.txt
+diff -q -r "$dir1" "$dir2" >> $SCRIPTPATH/Differences.txt
+echo "Done. Check Differences.txt."
