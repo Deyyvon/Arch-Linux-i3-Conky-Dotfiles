@@ -48,13 +48,16 @@ udiskie -a &
 xscreensaver -nosplash  &
 
 # Start a VNC server
-vncserver :1 &
+x0vncserver -display :0 -passwordfile ~/.vnc/passwd &
+
+# Start Dropbox
+dropbox &
 
 ###################
 # i3
 ###################
 # Execute i3 window manager with logs
-#exec i3 -V >> ~/i3log-$(date +'%F-%k-%M-%S') 2>&1
+#exec i3 -V >> ~/i3log-$(date +"%F-%k-%M-%S") 2>&1
 
 # Launch i3
 exec dbus-launch i3
@@ -63,7 +66,7 @@ exec dbus-launch i3
 # KDE
 ###################
 # Execute KDE desktop environment with logs
-#exec startkde >> ~/kdelog-$(date +'%F-%k-%M-%S') 2>&1
+#exec startkde >> ~/kdelog-$(date +"%F-%k-%M-%S") 2>&1
 
 # Launch KDE
 #exec startkde
