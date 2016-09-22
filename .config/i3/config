@@ -91,6 +91,7 @@ assign [class="Firefox"] 2: 
 assign [class="google-chrome" instance="google-chrome"] 2: 
 assign [class="Subl3"] 3: 
 assign [class="okular"] 4: 
+assign [class="libreoffice"] 4: 
 for_window [title="Hangouts"] move container to workspace 5: , floating enable 
 assign [class="Vlc"] 6: 
 
