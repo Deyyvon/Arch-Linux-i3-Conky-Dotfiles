@@ -1,4 +1,7 @@
-# Arch-Linux-i3-Conky-Dotfiles
-Configuration files for my setup of i3WM and Conky system monitor.
+# Deyyvon's GNU/Linux Dotfiles
+This repository contains all of my dotfiles for various flavors of GNU/Linux.
 
-![Screenshot](/2016-10-10_11:05:17.png?raw=true "Screenshot")
+## Arch
+### basic
+These were my first dotfiles when I first installed Arch. As the directory name states,
+they are quite basic. Uses FontAwesome for the i3status bar.
