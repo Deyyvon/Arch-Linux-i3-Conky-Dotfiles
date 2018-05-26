@@ -1,0 +1,3 @@
+#!/bin/sh
+
+mono /etc/M3D.App/M3DGUI 1>/dev/null 2>&1 &
