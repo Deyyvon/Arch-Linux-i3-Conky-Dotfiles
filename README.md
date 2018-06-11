@@ -1,4 +1,4 @@
-# Deyyvon's GNU/Linux Dotfiles
+# synack.d's GNU/Linux Dotfiles
 This repository contains all of my dotfiles for various flavors of GNU/Linux.
 
 ## Arch
