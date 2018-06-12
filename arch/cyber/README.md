@@ -5,3 +5,6 @@
     * vim-airline-themes
 * powerline
 * nerdfonts
+* zsh
+    * antigen
+    * powerlevel9k
