@@ -8,3 +8,8 @@
 * zsh
     * antigen
     * powerlevel9k
+
+# Notes
+* To get locking working with suspension, you need:
+    * /usr/local/src/lock.sh
+    * /etc/systemd/system/suspend@.service (enable with `sudo systemctl enable suspend@devon.service`)
