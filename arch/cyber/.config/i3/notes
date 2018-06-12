@@ -1,0 +1,5 @@
+# dotfile notes
+- To get locking working with suspension, you need 
+	`-/usr/local/src/lock.sh
+	`-/etc/systemd/system/suspend@.service
+		`- Enable it with "sudo systemctl enable suspend@devon.service"
