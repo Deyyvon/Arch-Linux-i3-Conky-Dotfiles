@@ -13,4 +13,4 @@
 * To get locking working with suspension, you need:
     * ``/usr/local/src/lock.sh``
     * ``/etc/systemd/system/suspend@.service``
-        * Enable with `sudo systemctl enable suspend@devon.service`
+        * Enable with `sudo systemctl enable suspend@<username>.service` where `<username>` is your user
