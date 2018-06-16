@@ -38,7 +38,7 @@ let s:W = ['#350035', '#D261F8', 0, 207]
 let g:airline#themes#cyber#palette = {}
 
 let g:airline#themes#cyber#palette.accents = {
-      \ 'purple': [ '#D261F8' , '' , 13 , '' , '' ],
+      \ 'red': [ '#D261F8' , '' , 13 , '' , '' ],
       \ }
 
 let g:airline#themes#cyber#palette.normal = airline#themes#generate_color_map(s:N1, s:N2, s:N3)
