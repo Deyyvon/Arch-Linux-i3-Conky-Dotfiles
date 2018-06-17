@@ -4,12 +4,15 @@
     * vim-airline
     * vim-airline-themes
 * powerline
-* nerdfonts
+* RobotoMono Nerd Fonts
 * zsh
     * antigen
     * powerlevel9k
 
-# Notes
+# Optional:
+* ``kalu`` - a script that notifies you of package updates and Arch news
+
+# Notes:
 * To get locking working with suspension, you need:
     * ``/usr/local/src/lock.sh``
     * ``/etc/systemd/system/suspend@.service``

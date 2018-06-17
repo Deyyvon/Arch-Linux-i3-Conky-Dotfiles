@@ -221,4 +221,7 @@ exec compton -b --config ~/.config/compton.conf
 exec feh --bg-scale ~/.config/i3/img/wallpapers/cyber-neon.jpg
 
 # Start Polybar
-exec --no-startup-id ~/.config/i3/scripts/polybar.sh
+exec_always --no-startup-id ~/.config/i3/scripts/polybar.sh
+
+# Start kalu, an update tracker
+exec --no-startup-id kalu
