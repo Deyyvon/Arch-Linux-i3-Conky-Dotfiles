@@ -209,7 +209,7 @@ exec nm-applet &
 exec --no-startup-id xfce-power-manager
 
 # Locker daemon
-exec xautolock -time 15 -locker /usr/local/src/lock.sh -nowlocker /usr/local/src/lock.sh -detectsleep &
+exec xautolock -time 15 -locker ~/.scripts/lock.sh -nowlocker ~/.scripts/lock.sh -detectsleep &
 
 # Numlock
 exec numlockx &
