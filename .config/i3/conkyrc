@@ -1,0 +1,24 @@
+background no
+out_to_console yes
+out_to_x no
+own_window no
+update_interval 1
+total_run_times 0
+short_units yes
+pad_percents 3
+cpu_avg_samples 2
+
+TEXT
+[
+{"full_text": ": ${cpu}% ${if_existing /sys/devices/platform/coretemp.0/hwmon/hwmon0/temp2_input} (${execi 1200 echo $(($(cat /sys/devices/platform/coretemp.0/hwmon/hwmon0/temp2_input) / 1000))} C)${else}(${execi 1200 echo $(($(cat /sys/devices/platform/coretemp.0/hwmon/hwmon0/temp2_input) / 1000))} C)${endif}", "color":"\#cf6a4c"},
+{"full_text": ": $mem","color":"\#cda869"},
+{"full_text": "${if_existing /proc/net/route ham0} : ${addr ham0}${endif}","color":"\#89b859"},
+{"full_text": "${if_existing /proc/net/route wlp3s0} : ${addr wlp3s0}${endif}","color":"\#89b859"},
+{"full_text": "${if_existing /proc/net/route enp2s0f0} : ${addr enp2s0f0}${endif}","color":"\#89b859"},
+{"full_text": "${if_existing /proc/net/route wlp3s0}${wireless_essid wlp3s0} ${wireless_link_qual_perc wlp3s0}%${endif}", "color":"\#00AAAA"},
+{"full_text": ": ${exec .scripts/bat_icon.sh}", "color":"\#254AB8"},
+{"full_text": ": ${exec .scripts/vol.sh}", "color":"\#6600cc"},
+{"full_text": ": ${fs_free /home}/${fs_size /home}", "color":"\#ff0066"},
+{"full_text": "${time %a, %m-%d-%Y}", "color":"\#afc4db"},
+{"full_text": " ${time %H:%M}", "color":"\#8f9d6a"}
+],
