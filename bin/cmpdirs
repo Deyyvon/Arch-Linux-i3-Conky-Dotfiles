@@ -1,0 +1,52 @@
+#!/bin/sh
+# This script compares two directories and returns the differences
+# into differences in the directory of this script.
+#
+# Written by Devon Bautista
+# Version: 2.0
+
+# Get current directory script is in
+ORIG=`pwd`
+cd $(dirname $0)
+
+# Clear terminal window
+#clear
+
+# Identify user running script
+echo "Running script as $USER from $(pwd)."
+echo
+
+# Get first directory
+echo "Enter Directory 1: "
+read -r dir1
+echo
+
+# Get second directory
+echo "Enter Directory 2: "
+read -r dir2
+echo
+
+# Compare directory differences, log errors
+echo "Comparing differences between directories..."
+diff -q -r "$dir1" "$dir2" 1>differences 2>errlog
+STATUS=$?
+
+if [ $STATUS -eq 0 ]; then
+	echo "Done. No differences were found between directories."
+	rm errlog
+	rm differences
+elif [ $STATUS -eq 1 ]; then
+	rm errlog
+	echo "Done. Differences between directories found:"
+	cat differences
+	echo "Differences stored in \"$(pwd)/differences\"."
+else
+	rm differences
+	echo "Errors performing \"diff\" occurred:"
+	cat errlog
+	echo "Above errors stored in \"$(pwd)/errlog\"."
+	cd $ORIG
+	exit 1
+fi
+
+cd $ORIG
