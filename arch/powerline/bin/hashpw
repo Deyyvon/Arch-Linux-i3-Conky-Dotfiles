@@ -1,5 +1,0 @@
-#!/bin/sh
-
-passwd=$1
-
-echo -n ${passwd} | iconv -t utf16le | openssl md4
