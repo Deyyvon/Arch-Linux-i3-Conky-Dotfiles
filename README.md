@@ -1,16 +1,17 @@
 # synack.d's GNU/Linux Dotfiles
-This repository contains all of my dotfiles for various flavors of GNU/Linux.
+This repository contains all of my dotfiles for various flavors of GNU/Linux. Each
+theme is located on a different branch, with my current "daily driver" dotfiles
+located in ``sandbox``. Enjoy!
 
-## Arch
-### cyber
+## cyber
 A cyberpunk/synthwave theme.
 ![Screenshot](/screenshots/cyber.png?raw=true "cyber")
 
-### basic
+## basic
 These were my first dotfiles when I first installed Arch. As the directory name states,
 they are quite basic. Uses FontAwesome for the i3status bar.
 ![Screenshot](/screenshots/basic.png?raw=true "basic")
 
-### powerline
+## powerline
 This is the second go-around on the same laptop which uses i3blocks with a powerline theme.
 ![Screenshot](/screenshots/powerline.png?raw=true "powerline")
