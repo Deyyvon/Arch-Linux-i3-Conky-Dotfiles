@@ -11,6 +11,7 @@
 
 # Optional:
 * ``kalu`` - a script that notifies you of package updates and Arch news
+* ``Breeze-Hacked`` - a h4x0r cursor theme
 
 # Notes:
 * To get locking working with suspension, you need:
