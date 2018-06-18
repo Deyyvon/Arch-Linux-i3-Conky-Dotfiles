@@ -19,6 +19,7 @@ A cyberpunk/synthwave theme.
 * [kalu](https://jjacky.com/kalu/) - a script that notifies you of package updates and Arch news
 * [Breeze-Hacked](https://kver.wordpress.com/2015/01/09/curses-i-mean-cursors/) - a h4x0r cursor theme
 * [i3lock](https://github.com/i3/i3lock) - an improved screen locker
+* [xautolock](https://github.com/l0b0/xautolock) - lock after idle time
 * [i3-gaps](https://github.com/Airblader/i3) - gaps between windows!
 
 ## Notes:
