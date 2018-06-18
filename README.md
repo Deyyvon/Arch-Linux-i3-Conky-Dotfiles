@@ -21,6 +21,9 @@ A cyberpunk/synthwave theme.
 * [i3lock](https://github.com/i3/i3lock) - an improved screen locker
 * [xautolock](https://github.com/l0b0/xautolock) - lock after idle time
 * [i3-gaps](https://github.com/Airblader/i3) - gaps between windows!
+* [ranger](https://github.com/ranger/ranger) - a terminal file explorer
+    * [ranger-devicons](https://github.com/alexanderjeurissen/ranger_devicons) - file icons for ranger
+* [rofi](https://github.com/DaveDavenport/rofi) - a handy program starter
 
 ## Notes:
 * To get locking working with suspension, you need:
