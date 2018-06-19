@@ -16,6 +16,7 @@ A cyberpunk/synthwave theme.
     * [powerlevel9k](https://github.com/bhilburn/powerlevel9k)
 
 ## Optional:
+* [feh](https://feh.finalrewind.org/) - an image viewer used to set the wallpaper
 * [kalu](https://jjacky.com/kalu/) - a script that notifies you of package updates and Arch news
 * [Breeze-Hacked](https://kver.wordpress.com/2015/01/09/curses-i-mean-cursors/) - a h4x0r cursor theme
 * [i3lock](https://github.com/i3/i3lock) - an improved screen locker
