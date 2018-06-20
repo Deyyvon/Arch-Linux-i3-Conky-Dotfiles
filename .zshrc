@@ -132,6 +132,7 @@ fi
 ##################################
 alias sudo='sudo -E'
 alias su='sudo -E zsh'
+alias neofetch='neofetch --colors 1 1 1 1 1 3 1 1'
 ########## END ALIASES ###########
 
 ##################################
