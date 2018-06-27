@@ -127,13 +127,8 @@ if (( ${+terminfo[smkx]} )) && (( ${+terminfo[rmkx]} )); then
     zle -N zle-line-finish
 fi
 
-##################################
-# ALIASES
-##################################
-alias sudo='sudo -E'
-alias su='sudo -E zsh'
-alias neofetch='neofetch --colors 1 1 1 1 1 3 1 1'
-########## END ALIASES ###########
+# Aliases
+source ~/.zsh_aliases
 
 ##################################
 # FUNCTIONS
