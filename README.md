@@ -1,5 +1,6 @@
-# cyber
-A cyberpunk/synthwave theme.
+# dev-flex-arch
+Visit [etcfiles/dev-flex-arch](https://github.com/synackd/etcfiles/tree/sandbox/dev-flex-arch)
+for system configuration files.
 
 ![Screenshot](/screenshots/cyber.png?raw=true "cyber")
 
