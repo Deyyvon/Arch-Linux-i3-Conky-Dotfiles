@@ -1,7 +1,8 @@
 # synack.d's GNU/Linux Dotfiles
-This repository contains all of my dotfiles for various flavors of GNU/Linux. Each
-theme is located on a different branch, with my current "daily driver" dotfiles
-located in ``sandbox``. Enjoy!
+This repository contains all of my dotfiles for various flavors of GNU/Linux. They have
+corresponding [etcfiles](https://github.com/synackd/etcfiles). Each theme is located on
+a different branch, with my current "daily driver" dotfiles located in
+``sandbox/<hostname>``. Enjoy!
 
 ## cyber
 A cyberpunk/synthwave theme.
