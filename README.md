@@ -17,8 +17,6 @@ A cyberpunk/synthwave theme.
     * [`antigen`](https://github.com/zsh-users/antigen)
     * [`powerlevel9k`](https://github.com/bhilburn/powerlevel9k)
 * [Breeze-Hacked](https://kver.wordpress.com/2015/01/09/curses-i-mean-cursors/) - a h4x0r cursor theme
-
-## Optional:
 * [`feh`](https://feh.finalrewind.org/) - an image viewer used to set the wallpaper
 * [`kalu`](https://jjacky.com/kalu/) - a script that notifies you of package updates and Arch news
 * [`i3-gaps`](https://github.com/Airblader/i3) - gaps between windows; replaces `i3`
