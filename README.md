@@ -1,5 +1,6 @@
 # cyber
-A cyberpunk/synthwave theme.
+A cyberpunk/synthwave theme. Visit
+[etcfiles/cyber](https://github.com/synackd/etcfiles/tree/cyber) for system config files.
 
 ![Screenshot](/screenshots/cyber.png?raw=true "cyber")
 
