@@ -2,7 +2,9 @@
 Visit [etcfiles/dev-flex-arch](https://github.com/synackd/etcfiles/tree/sandbox/dev-flex-arch)
 for system configuration files.
 
-![Screenshot](/screenshots/cyber.png?raw=true "cyber")
+![Cyber Theme](/screenshots/cyber.png?raw=true "cyber")
+![Cyber Theme Lock](/screenshots/cyber-lock.png?raw=true "cyber")
+![Cyber Theme Run](/screenshots/cyber-run.png?raw=true "cyber")
 
 ## Necessities:
 * [`i3`](https://github.com/i3/i3)
