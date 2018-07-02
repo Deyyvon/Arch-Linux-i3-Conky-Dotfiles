@@ -19,13 +19,15 @@ Where `<theme>` is the name of the branch where the desired theme resides.
 ## Themes
 ### cyber
 A cyberpunk/synthwave theme.
-![Screenshot](/screenshots/cyber.png?raw=true "cyber")
+![Cyber Theme](/screenshots/cyber.png?raw=true "cyber")
+![Cyber Theme Lock](/screenshots/cyber-lock.png?raw=true "cyber")
+![Cyber Theme Run](/screenshots/cyber-run.png?raw=true "cyber")
 
 ### basic
 These were my first dotfiles when I first installed Arch. As the directory name states,
 they are quite basic. Uses FontAwesome for the i3status bar.
-![Screenshot](/screenshots/basic.png?raw=true "basic")
+![Basic Theme](/screenshots/basic.png?raw=true "basic")
 
 ### powerline
 This is the second go-around on the same laptop which uses i3blocks with a powerline theme.
-![Screenshot](/screenshots/powerline.png?raw=true "powerline")
+![Powerline Theme](/screenshots/powerline.png?raw=true "powerline")
