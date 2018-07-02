@@ -1,5 +1,5 @@
-# dev-flex-arch
-Visit [etcfiles/dev-flex-arch](https://github.com/synackd/etcfiles/tree/sandbox/dev-flex-arch)
+# dev-thkpd-artix
+Visit [etcfiles/dev-thkpd-artix](https://github.com/synackd/etcfiles/tree/sandbox/dev-thkpd-artix)
 for system configuration files.
 
 ![Cyber Theme](/screenshots/cyber.png?raw=true "cyber")
@@ -27,25 +27,3 @@ for system configuration files.
 * [`ranger`](https://github.com/ranger/ranger) - a terminal file explorer
     * [`ranger-devicons`](https://github.com/alexanderjeurissen/ranger_devicons) - file icons for ranger
 * [`rofi`](https://github.com/DaveDavenport/rofi) - a handy program starter
-
-## Notes:
-* To get locking working with suspension using Systemd, you need:
-    * ``~/.scripts/lock.sh``
-    * ``/etc/systemd/system/suspend@.service``
-        * Enable with `sudo systemctl enable suspend@<username>.service` where `<username>` is your user
-```systemd
-#suspend@.service
-[Unit]
-Description=Lock the screen on resume from suspend
-Before=sleep.target
-
-[Service]
-User=%I
-Type=forking
-Environment=DISPLAY=:0
-ExecStart=-/usr/bin/xautolock -locknow
-ExecStartPost=/usr/bin/sleep 3
-
-[Install]
-WantedBy=sleep.target
-```
