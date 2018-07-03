@@ -11,6 +11,7 @@ for system configuration files.
 * [`i3lock`](https://github.com/i3/i3lock) - an improved screen locker
 * [`xautolock`](https://github.com/l0b0/xautolock) - lock after idle time
 * [`polybar`](https://github.com/jaagr/polybar)
+* [`xfce4-terminal`](https://github.com/xfce-mirror/xfce4-terminal)
 * [`vim-pathogen`](https://github.com/tpope/vim-pathogen)
     * [`vim-airline`](https://github.com/vim-airline/vim-airline)
     * [`vim-airline-themes`](https://github.com/vim-airline/vim-airline-themes)
