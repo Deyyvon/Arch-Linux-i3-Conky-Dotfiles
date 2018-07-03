@@ -197,10 +197,10 @@ bindsym $mod+r mode "resize"
 exec_always ~/.config/i3/scripts/monitor.sh
 
 # Start PolicyKit authentication agent
-exec /usr/lib/xfce-polkit/xfce-polkit &
+#exec /usr/lib/xfce-polkit/xfce-polkit &
 
 # Start Dropbox
-exec dropbox &
+#exec dropbox &
 
 # NetworkManager applet
 exec nm-applet &
@@ -209,13 +209,13 @@ exec nm-applet &
 #exec xscreensaver -no-splash &
 
 # Power manager
-exec --no-startup-id xfce-power-manager
+#exec --no-startup-id xfce-power-manager
 
 # Locker daemon
 exec xautolock -time 15 -locker ~/.scripts/lock.sh -nowlocker ~/.scripts/lock.sh -detectsleep &
 
 # Numlock
-exec numlockx &
+#exec numlockx &
 
 # Compton compositor
 exec compton -b --config ~/.config/compton.conf
