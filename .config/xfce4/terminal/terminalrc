@@ -31,4 +31,5 @@ ColorPalette=rgb(85,29,141);rgb(102,0,204);rgb(106,132,255);rgb(0,183,182);rgb(3
 MiscShowRelaunchDialog=TRUE
 ColorForeground=#028afe4adb64
 ColorBackground=#070600001515
+Encoding=UTF-8
 

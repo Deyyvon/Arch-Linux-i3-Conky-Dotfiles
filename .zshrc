@@ -2,6 +2,7 @@
 # EXPORTS
 ###################################################
 export TERM="xterm-256color"
+export LANG="en_US.UTF-8"
 export LD_LIBRARY_PATH="${LD_LIBRARY_PATH}:/usr/lib64:/usr/lib32:/opt/Xilinx/Vivado/2017.4/lib/lnx64.o:/opt/Xilinx/SDK/2017.4/bin/unwrapped/lnx64.o"
 export PATH="${PATH}":"${LD_LIBRARY_PATH}"
 
