@@ -41,6 +41,9 @@ gaps outer 5
 new_window 1pixel
 smart_borders on
 
+# Window settings
+for_window [class="Wicd-client.py"] floating enable
+
 # Lock screen now
 bindsym $mod+Shift+l exec xautolock -locknow
 
