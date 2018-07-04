@@ -196,14 +196,14 @@ bindsym $mod+r mode "resize"
 # Check for external monitor
 exec_always ~/.config/i3/scripts/monitor.sh
 
-# Start PolicyKit authentication agent
-#exec /usr/lib/xfce-polkit/xfce-polkit &
-
 # Start Dropbox
 #exec dropbox &
 
 # NetworkManager applet
-exec nm-applet &
+#exec nm-applet &
+
+# wicd
+exec wicd-client --tray
 
 # Screensaver
 #exec xscreensaver -no-splash &
