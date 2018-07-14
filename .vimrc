@@ -19,6 +19,12 @@ set mouse=a
 " Set clipboard to system
 set clipboard=unnamedplus
 
+" Return to last editing position when opening files
+autocmd BufReadPost *
+	\ if line("'\"") > 0 && line("'\"") <= line("$") |
+	\	exe "normal! g`\"" |
+	\ endif
+
 " Copy/paste/cut shortcuts
 vmap <C-c> "+yi
 vmap <C-x> "+c

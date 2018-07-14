@@ -43,6 +43,11 @@ smart_borders on
 
 # Window settings
 for_window [class="Wicd-client.py"] floating enable
+for_window [class="Peek"] floating enable
+for_window [class="XVkbd"] floating enable
+
+# Bind rotation key to rotate screen
+bindsym XF86Eject exec thinkpad-rotate flip
 
 # Lock screen now
 bindsym $mod+Shift+l exec xautolock -locknow
@@ -199,8 +204,12 @@ bindsym $mod+r mode "resize"
 # Check for external monitor
 exec_always ~/.config/i3/scripts/monitor.sh
 
+# Keymap for screen rotation
+exec sudo setkeycodes 6c 161
+exec sudo udevadm trigger
+
 # Start Dropbox
-#exec dropbox &
+exec dropbox &
 
 # NetworkManager applet
 #exec nm-applet &
@@ -231,3 +240,6 @@ exec_always --no-startup-id ~/.config/i3/scripts/polybar.sh
 
 # Start kalu, an update tracker
 exec --no-startup-id kalu
+
+# Start bluetooth applet
+exec --no-startup-id blueman-applet
