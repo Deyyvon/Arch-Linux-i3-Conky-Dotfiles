@@ -19,6 +19,11 @@ set mouse=a
 " Set clipboard to system
 set clipboard=unnamedplus
 
+" Tab length
+set tabstop=4
+set softtabstop=0 noexpandtab
+set shiftwidth=4
+
 " Copy/paste/cut shortcuts
 vmap <C-c> "+yi
 vmap <C-x> "+c
