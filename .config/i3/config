@@ -228,3 +228,6 @@ exec_always --no-startup-id ~/.config/i3/scripts/polybar.sh
 
 # Start kalu, an update tracker
 exec --no-startup-id kalu
+
+# Start Bluetooth applet
+exec --no-startup-id blueman-applet
