@@ -19,10 +19,18 @@ set mouse=a
 " Set clipboard to system
 set clipboard=unnamedplus
 
-" Tab length
+" Tab configuration
+" Use tab character 4 spaces wide
+"set tabstop=4
+"set softtabstop=0 noexpandtab
+"set shiftwidth=4
+
+" Use 4 spaces when pressing Tab key
 set tabstop=4
-set softtabstop=0 noexpandtab
+set softtabstop=4
 set shiftwidth=4
+set expandtab
+set smarttab
 
 " Return to last editing position when opening files
 autocmd BufReadPost *
