@@ -75,7 +75,7 @@ else
 
 	# Powerline fonts
 	powerline-daemon -q
-	source /usr/lib/python3.6/site-packages/powerline/bindings/zsh/powerline.zsh
+	source /usr/lib/python3.7/site-packages/powerline/bindings/zsh/powerline.zsh
 
 	# Enable Powerlevel9k ZSH Theme
 	source /usr/share/zsh-theme-powerlevel9k/powerlevel9k.zsh-theme
