@@ -22,7 +22,7 @@ xscreensaver-command -deactivate && sleep 1 2>/dev/null
 # 	--textcolor=$TEXT_COLOR \
 #	--textsize=20 \
 
-i3lock -p default -B=10 -S=0 -e -f -k --indicator \
+i3lock -n -p default -B=10 -S=0 -e -f -k --indicator \
 	--insidevercolor=$INSIDE_COLOR \
 	--ringvercolor=$INSIDE_VERIFY_RING_COLOR \
 	--insidewrongcolor=$INSIDE_VERIFY_COLOR \
