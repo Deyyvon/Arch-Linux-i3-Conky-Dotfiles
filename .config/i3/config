@@ -131,6 +131,21 @@ bindsym $mod+a focus parent
 # focus the child container
 #bindsym $mod+d focus child
 
+# External monitor stuff
+exec_always --no-startup-id ~/.config/i3/scripts/monitor.sh
+set $left HDMI2
+set $right VGA1
+workspace 1 output $left
+workspace 2 output $right
+workspace 3 output $left
+workspace 4 output $right
+workspace 5 output $left
+workspace 6 output $right
+workspace 7 output $left
+workspace 8 output $right
+workspace 9 output $left
+workspace 10 output $right
+
 # switch to workspace
 bindsym $mod+1 workspace 1
 bindsym $mod+2 workspace 2
@@ -201,8 +216,14 @@ bindsym $mod+r mode "resize"
 ############################
 # AUTOSTART
 ############################
-# Check for external monitor
-exec_always ~/.config/i3/scripts/monitor.sh
+# Start Polybar
+exec_always --no-startup-id ~/.config/i3/scripts/polybar.sh
+
+# Compton compositor
+exec compton -b --config ~/.config/compton.conf
+
+# Set background
+exec feh --bg-scale ~/.config/i3/img/wallpapers/cyber-neon.jpg
 
 # Keymap for screen rotation
 exec sudo setkeycodes 6c 161
@@ -228,15 +249,6 @@ exec nm-applet &
 
 # Locker daemon
 exec xautolock -detectsleep -time 15 -locker ~/.scripts/lock.sh -nowlocker ~/.scripts/lock.sh &
-
-# Compton compositor
-exec compton -b --config ~/.config/compton.conf
-
-# Set background
-exec feh --bg-scale ~/.config/i3/img/wallpapers/cyber-neon.jpg
-
-# Start Polybar
-exec_always --no-startup-id ~/.config/i3/scripts/polybar.sh
 
 # Start kalu, an update tracker
 exec --no-startup-id kalu
