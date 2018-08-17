@@ -23,6 +23,8 @@ margin-bottom = 5
 
 ;------------------------
 [bar/top]
+locale = en_US.UTF-8
+
 monitor = ${env:MONITOR:}
 monitor-strict = true
 width = 100%
