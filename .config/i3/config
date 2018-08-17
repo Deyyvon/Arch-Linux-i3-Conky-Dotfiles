@@ -208,14 +208,17 @@ exec_always ~/.config/i3/scripts/monitor.sh
 exec sudo setkeycodes 6c 161
 exec sudo udevadm trigger
 
+# Automount USBs
+exec udiskie
+
 # Start Dropbox
 exec dropbox &
 
 # NetworkManager applet
-#exec nm-applet &
+exec nm-applet &
 
 # wicd
-exec wicd-client --tray
+#exec wicd-client --tray
 
 # Screensaver
 #exec xscreensaver -no-splash &
@@ -224,10 +227,7 @@ exec wicd-client --tray
 #exec --no-startup-id xfce-power-manager
 
 # Locker daemon
-exec xautolock -time 15 -locker ~/.scripts/lock.sh -nowlocker ~/.scripts/lock.sh -detectsleep &
-
-# Numlock
-#exec numlockx &
+exec xautolock -detectsleep -time 15 -locker ~/.scripts/lock.sh -nowlocker ~/.scripts/lock.sh &
 
 # Compton compositor
 exec compton -b --config ~/.config/compton.conf
