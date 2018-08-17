@@ -1,8 +1,8 @@
 #!/usr/bin/env sh
 # Configures i3 based on if an external monitor is plugged in.
 
-EXT_DISPLAY='HDMI1'	# External display from xrandr
-INT_DISPLAY='EDP1'	# Internal display from xrandr
+EXT_DISPLAY='HDMI2'	# External display from xrandr
+INT_DISPLAY='HDMI3'	# Internal display from xrandr
 
 # Check if external monitor is connected.
 HDMI_STATUS=$(xrandr |  awk -v x="$EXT_DISPLAY" '$0 ~ x {print $2}' | tr -d '\n')
