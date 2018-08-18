@@ -221,6 +221,10 @@ exec_always --no-startup-id ~/.config/i3/scripts/polybar.sh
 
 # Compton compositor
 exec compton -b --config ~/.config/compton.conf
+#
+# Compiz Reloaded compositor
+#exec compiz --replace
+#exec fusion-icon &
 
 # Set background
 exec feh --bg-scale ~/.config/i3/img/wallpapers/cyber-neon.jpg
