@@ -45,6 +45,8 @@ smart_borders on
 for_window [class="Wicd-client.py"] floating enable
 for_window [class="Peek"] floating enable
 for_window [class="XVkbd"] floating enable
+for_window [class="Blueberry.py"] floating enable
+for_window [class="Pavucontrol"] floating enable
 
 # Bind rotation key to rotate screen
 bindsym XF86Eject exec thinkpad-rotate flip
@@ -63,6 +65,12 @@ bindcode 233 exec xbacklight -inc 10
 bindcode 121 exec amixer -q sset Master toggle
 bindcode 122 exec amixer -q sset Master 5%-
 bindcode 123 exec amixer -q sset Master 5%+
+
+# Media keys
+bindsym XF86AudioPlay exec playerctl play-pause
+bindsym XF86AudioNext exec playerctl next
+bindsym XF86AudioPrev exec playerctl previous
+bindsym XF86AudioStop exec playerctl stop
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -255,7 +263,11 @@ exec nm-applet &
 exec xautolock -detectsleep -time 15 -locker ~/.scripts/lock.sh -nowlocker ~/.scripts/lock.sh &
 
 # Start kalu, an update tracker
-exec --no-startup-id kalu
+exec --no-startup-id ~/.scripts/kalu.sh
 
 # Start bluetooth applet
-exec --no-startup-id blueman-applet
+#exec --no-startup-id blueman-applet
+exec --no-startup-id blueberry-tray &
+
+# Start Polkit daemon
+exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
