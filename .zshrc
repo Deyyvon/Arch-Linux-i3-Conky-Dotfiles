@@ -4,7 +4,8 @@
 export TERM="xterm-256color"
 export LANG="en_US.UTF-8"
 export LD_LIBRARY_PATH="${LD_LIBRARY_PATH}:/usr/lib64:/usr/lib32:/opt/Xilinx/Vivado/2017.4/lib/lnx64.o:/opt/Xilinx/SDK/2017.4/bin/unwrapped/lnx64.o"
-export PATH="${PATH}":"${LD_LIBRARY_PATH}"
+export PATH="${PATH}":"${LD_LIBRARY_PATH}:/opt/iot-devkit/1.7.2/sysroots/x86_64-pokysdk-linux/usr/bin/i586-poky-linux"
+export SSH_ENV="$HOME/.ssh/environment"
 
 # The following lines were added by compinstall
 
@@ -147,6 +148,18 @@ man() {
 	      man "$@"
 }
 
+# SSH agent session start
+# Taken from: https://stackoverflow.com/a/18915067
+function start_agent {
+    echo "Initializing SSH agent..."
+    /usr/bin/ssh-agent | sed 's/^echo/#echo/' > "${SSH_ENV}"
+    echo 'SSH_ASKPASS="/usr/bin/qt4-ssh-askpass"; export SSH_ASKPASS' >> "${SSH_ENV}"
+    echo "Succeeded."
+    chmod 600 "${SSH_ENV}"
+    source "${SSH_ENV}" > /dev/null
+    /usr/bin/ssh-add;
+}
+
 ##################################
 # AUTOMATICALLY RUN
 ##################################
@@ -157,4 +170,15 @@ antigen apply
 # Some nice stats.
 if [[ $(whoami | tr -d '\n') != 'root' ]]; then
 	neofetch --colors 1 1 1 1 1 3 1 1
+fi
+
+# Source SSH settings, if available
+# Taken from: https://stackoverflow.com/a/18915067
+if [ -f "${SSH_ENV}" ]; then
+    . "${SSH_ENV}"
+    ps -ef | grep "${SSH_AGENT_PID}" | grep ssh-agent$ > /dev/null || {
+        start_agent;
+    }
+else
+    start_agent;
 fi
