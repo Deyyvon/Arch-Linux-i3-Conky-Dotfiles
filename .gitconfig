@@ -1,6 +1,6 @@
 [user]
 	email = devontbautista@gmail.com
-	name = synackd
+	name = Devon Bautista
 [filter "lfs"]
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
@@ -12,3 +12,5 @@
 	lg = !"git lg1"
 [color]
 	ui = auto
+[core]
+	editor = vim
