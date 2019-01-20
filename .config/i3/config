@@ -67,10 +67,10 @@ bindcode 122 exec amixer -q sset Master 5%-
 bindcode 123 exec amixer -q sset Master 5%+
 
 # Media keys
-bindsym XF86AudioPlay exec playerctl play-pause
-bindsym XF86AudioNext exec playerctl next
-bindsym XF86AudioPrev exec playerctl previous
-bindsym XF86AudioStop exec playerctl stop
+bindcode 171 exec playerctl next
+bindcode 172 exec playerctl play-pause
+bindcode 173 exec playerctl previous
+#bindcode 174 exec playerctl stop
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
