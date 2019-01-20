@@ -166,6 +166,16 @@ man() {
 	      man "$@"
 }
 
+mkcd() {
+    mkdir "$1"
+    cd "$1"
+}
+
+cdl() {
+    cd "$1"
+    ls
+}
+
 # SSH agent session start
 # Taken from: https://stackoverflow.com/a/18915067
 function start_agent {
