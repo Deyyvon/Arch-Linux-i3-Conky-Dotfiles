@@ -3,9 +3,27 @@
 ###################################################
 export TERM="xterm-256color"
 export LANG="en_US.UTF-8"
-export LD_LIBRARY_PATH="${LD_LIBRARY_PATH}:/usr/lib64:/usr/lib32:/opt/Xilinx/Vivado/2017.4/lib/lnx64.o:/opt/Xilinx/SDK/2017.4/bin/unwrapped/lnx64.o"
+#export LD_LIBRARY_PATH="${LD_LIBRARY_PATH}:/usr/lib64:/usr/lib32:/opt/Xilinx/Vivado/2017.4/lib/lnx64.o:/opt/Xilinx/SDK/2017.4/bin/unwrapped/lnx64.o"
+export LD_LIBRARY_PATH="/usr/lib64:/usr/lib32:/opt/Xilinx/Vivado/2017.4/lib/lnx64.o:/opt/Xilinx/SDK/2017.4/bin/unwrapped/lnx64.o"
+
+##### PATH #####
+# Anaconda
+export PATH="${PATH}":"/opt/anaconda/bin"
+
+# Galileo board toolchain
 export PATH="${PATH}":"${LD_LIBRARY_PATH}:/opt/iot-devkit/1.7.2/sysroots/x86_64-pokysdk-linux/usr/bin/i586-poky-linux"
-export SSH_ENV="$HOME/.ssh/environment"
+
+# AVR32 toolchain
+#export PATH="${PATH}":"/usr/local/avr32/bin"
+
+# Home bin directory
+export PATH="${HOME}/bin":"${PATH}"
+###############
+export SSH_ENV="${HOME}/.ssh/environment"
+
+# WeChall
+source ~/.config/zsh/vars/wechall.zsh
+###################################################
 
 # The following lines were added by compinstall
 
