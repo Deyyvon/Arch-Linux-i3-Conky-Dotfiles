@@ -1,0 +1,8 @@
+# For Qt theming.
+export QT_QPA_PLATFORMTHEME="qt5ct"
+
+# Make sure only one PulseAudio daemon is running.
+while pulseaudio --check; do
+    pulseaudio -k > /dev/null
+done
+pulseaudio --start
