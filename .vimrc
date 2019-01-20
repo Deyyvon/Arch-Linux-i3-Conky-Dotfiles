@@ -1,6 +1,9 @@
 " Set Runtime path
 set runtimepath=~/.vim,$VIM/vimfiles,$VIMRUNTIME,$VIM/vimfiles/after,~/.vim/after
 
+" Avoid storing history
+let g:netrw_dirhistmax = 0
+
 " Syntax highlighting
 filetype plugin indent on
 
