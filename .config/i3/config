@@ -235,7 +235,7 @@ exec compton -b --config ~/.config/compton.conf
 #exec fusion-icon &
 
 # Set background
-exec feh --bg-scale ~/.config/i3/img/wallpapers/cyber-neon.jpg
+exec_always feh --bg-scale ~/.config/i3/img/wallpapers/cyber-neon.jpg
 
 # Keymap for screen rotation
 exec sudo setkeycodes 6c 161
