@@ -176,6 +176,11 @@ cdl() {
     ls
 }
 
+cdp() {
+    cd "$1"
+    pwd
+}
+
 # SSH agent session start
 # Taken from: https://stackoverflow.com/a/18915067
 function start_agent {
