@@ -166,16 +166,19 @@ man() {
 	      man "$@"
 }
 
+# Make a directory and change working dir to it
 mkcd() {
     mkdir "$1"
     cd "$1"
 }
 
+# Change working dir and list files there
 cdl() {
     cd "$1"
     ls
 }
 
+# Change working dir and print it
 cdp() {
     cd "$1"
     pwd
