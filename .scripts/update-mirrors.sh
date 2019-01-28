@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-if [ -a /etc/pacman.d/mirrorlist.pacnew ]; then
+if [ -a /etc/pacman.d/mirrorlist-arch.pacnew ]; then
 	echo -n 'New mirrorlist found. Backing up...'
 	cp /etc/pacman.d/mirrorlist.pacnew /etc/pacman.d/mirrorlist-arch.backup
 	echo 'Done.'
