@@ -12,5 +12,4 @@
 	lg = !"git lg1"
 [core]
 	editor = vim
-    eol = lf
-    text = auto
+	autocrlf = input
