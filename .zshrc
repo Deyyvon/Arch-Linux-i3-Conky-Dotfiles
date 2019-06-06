@@ -49,8 +49,8 @@ antigen bundle git
 antigen bundle zsh-users/zsh-syntax-highlighting
 
 # Use powerline bindings for ZSH prompt
-powerline-daemon -q
-source ~/Library/Python/3.6/lib/python/site-packages/powerline/bindings/zsh/powerline.zsh
+/Library/Frameworks/Python.framework/Versions/3.7/bin/powerline-daemon -q
+source /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/powerline/bindings/zsh/powerline.zsh
 
 # Enable Powerlevel9k ZSH Theme
 #POWERLEVEL9K_INSTALLATION_PATH=$ANTIGEN_BUNDLES/bhilburn/powerlevel9k
@@ -119,6 +119,24 @@ man() {
 	      man "$@"
 }
 
+# Make a directory and change working dir to it
+mkcd() {
+    mkdir "$1"
+    cd "$1"
+}
+
+# Change working dir and list files there
+cdl() {
+    cd "$1"
+    ls
+}
+
+# Change working dir and print it
+cdp() {
+    cd "$1"
+    pwd
+}
+
 # SSH agent session start
 # Taken from: https://stackoverflow.com/a/18915067
 function start_agent {
@@ -133,7 +151,7 @@ function start_agent {
 
 #
 # AUTORUN
-#
+
 # Source SSH settings, if available
 # Taken from: https://stackoverflow.com/a/18915067
 if [ -f "${SSH_ENV}" ]; then
@@ -143,4 +161,12 @@ if [ -f "${SSH_ENV}" ]; then
     }
 else
     start_agent;
+fi
+
+# Set up gpg-agent automatically for every shell
+if [ -f ~/.gnupg/.gpg-agent-info ] && [ -n "$(pgrep gpg-agent)" ]; then
+    source ~/.gnupg/.gpg-agent-info
+    export GPG_AGENT_INFO
+else
+    eval $(gpg-agent --daemon --write-env-file ~/.gnupg/.gpg-agent-info)
 fi
