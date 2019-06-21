@@ -193,13 +193,11 @@ function start_ssh_agent {
 function start_gpg_agent {
     # Start gpg-agent if installed and not started already
     if [ -x /usr/bin/gpg-agent ]; then
-        echo "Found /usr/bin/gpg-agent."
         /usr/bin/pgrep gpg-agent > /dev/null || {
             echo "Starting gpg-agent..."
             /usr/bin/gpg-agent --daemon
             return
         }
-        echo "gpg-agent already started."
     fi
 }
 
