@@ -17,16 +17,18 @@ if [ -a /etc/pacman.d/mirrorlist-arch.pacnew ]; then
 	rm /etc/pacman.d/mirrorlist-arch.pacnew
 	echo 'Done.'
 	exit 0
+else
+    echo 'Backing up mirrorlist.'
+    cp /etc/pacman.d/mirrorlist-arch /etc/pacman.d/mirrorlist-arch.backup
+
+    echo 'Enabling every mirror.'
+    sed -i 's/^#Server/Server/' /etc/pacman.d/mirrorlist-arch
+
+    echo 'Ranking mirrors by speed.'
+    rankmirrors /etc/pacman.d/mirrorlist-arch > /etc/pacman.d/mirrorlist-arch.tmp
+    mv /etc/pacman.d/mirrorlist-arch.tmp /etc/pacman.d/mirrorlist-arch
+
+    echo 'Done.'
+    exit 0
 fi
 
-#echo 'Backing up mirrorlist.'
-#cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.backup
-
-#echo 'Enabling every mirror.'
-#sed -i 's/^#Server/Server/' /etc/pacman.d/mirrorlist.backup
-
-#echo 'Ranking mirrors by speed.'
-#rankmirrors /etc/pacman.d/mirrorlist.backup > /etc/pacman.d/mirrorlist
-
-#echo 'Done.'
-#exit 0
