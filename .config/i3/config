@@ -47,6 +47,7 @@ for_window [class="Peek"] floating enable
 for_window [class="XVkbd"] floating enable
 for_window [class="Blueberry.py"] floating enable
 for_window [class="Pavucontrol"] floating enable
+for_window [class="Tk"] floating enable
 
 # Bind rotation key to rotate screen
 bindsym XF86Eject exec thinkpad-rotate flip
