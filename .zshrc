@@ -180,7 +180,7 @@ cdp() {
 
 # SSH agent session start
 # Taken from: https://stackoverflow.com/a/18915067
-function start_agent {
+function start_ssh_agent {
     echo "Initializing SSH agent..."
     /usr/bin/ssh-agent | sed 's/^echo/#echo/' > "${SSH_ENV}"
     echo 'SSH_ASKPASS="/usr/bin/qt4-ssh-askpass"; export SSH_ASKPASS' >> "${SSH_ENV}"
@@ -188,6 +188,19 @@ function start_agent {
     chmod 600 "${SSH_ENV}"
     source "${SSH_ENV}" > /dev/null
     /usr/bin/ssh-add;
+}
+
+function start_gpg_agent {
+    # Start gpg-agent if installed and not started already
+    if [ -x /usr/bin/gpg-agent ]; then
+        echo "Found /usr/bin/gpg-agent."
+        /usr/bin/pgrep gpg-agent > /dev/null || {
+            echo "Starting gpg-agent..."
+            /usr/bin/gpg-agent --daemon
+            return
+        }
+        echo "gpg-agent already started."
+    fi
 }
 
 ##################################
@@ -207,8 +220,11 @@ fi
 if [ -f "${SSH_ENV}" ]; then
     . "${SSH_ENV}"
     ps -ef | grep "${SSH_AGENT_PID}" | grep ssh-agent$ > /dev/null || {
-        start_agent;
+        start_ssh_agent;
     }
 else
-    start_agent;
+    start_ssh_agent;
 fi
+
+# Start gpg-agent
+start_gpg_agent
