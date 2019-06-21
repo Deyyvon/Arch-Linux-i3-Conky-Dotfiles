@@ -32,4 +32,5 @@ MiscShowRelaunchDialog=TRUE
 ColorForeground=#028afe4adb64
 ColorBackground=#070600001515
 Encoding=UTF-8
+ShortcutsNoMenukey=TRUE
 
