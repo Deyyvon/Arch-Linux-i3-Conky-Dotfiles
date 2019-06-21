@@ -42,10 +42,10 @@ autocmd BufReadPost *
 	\ endif
 
 " Copy/paste/cut shortcuts
-vmap <C-c> "+yi
-vmap <C-x> "+c
-map <C-v> c<ESC>"+p
-imap <C-v> <C-r><C-o>+
+"vmap <C-c> "+yi
+"vmap <C-x> "+c
+"map <C-v> c<ESC>"+p
+"imap <C-v> <C-r><C-o>+
 
 " Rewrite as root
 command W w !sudo tee %<CR>
