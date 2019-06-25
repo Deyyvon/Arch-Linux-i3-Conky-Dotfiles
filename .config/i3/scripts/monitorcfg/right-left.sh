@@ -18,7 +18,7 @@ function pbar() {
     while pgrep -x polybar > /dev/null; do sleep 1; done
 
     # Put polybars on correct displays.
-    for m in {$2,$1}; do
+    for m in {$1,$2}; do
         MONITOR=$m polybar -q "$bar"&
     done
 }
