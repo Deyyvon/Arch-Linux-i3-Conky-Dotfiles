@@ -114,6 +114,13 @@ let g:arduino_serial_port_globs = ['/dev/ttyACM*',
 " 	archlinux-arduino:avr:mega:cpu=atmega2560
 " 	archlinux-arduino:avr:uno
 
+" Toggle tagbar window with F8 key
+nmap <F8> :TagbarToggle<CR>
+
+" Generate ctags with Ctrl + P
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
+
 if $DISPLAY != ""
 	" Powerline status bar
 	let g:powerline_pycmd="py3"
