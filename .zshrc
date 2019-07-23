@@ -195,7 +195,11 @@ function start_gpg_agent {
     if [ -x /usr/bin/gpg-agent ]; then
         /usr/bin/pgrep gpg-agent > /dev/null || {
             echo "Starting gpg-agent..."
-            /usr/bin/gpg-agent --daemon
+            if [ -n "$DISPLAY" ]; then
+                /usr/bin/gpg-agent --daemon
+            else
+                /usr/bin/gpg-agent --daemon --pinentry-program /usr/bin/pinentry-curses
+            fi
             return
         }
     fi
