@@ -31,10 +31,10 @@ test $# -eq 1 || { usage; exit 1; }
 # Determine which monitor config to use
 case "$1" in
     left-right)
-        "$MONCFGPATH"/left-right.sh || notfound "$1".sh $MONCFGPATH
+        "$MONCFGPATH"/left-right.sh > /dev/null 2>&1 || notfound "$1".sh $MONCFGPATH
         ;;
     right-left)
-        "$MONCFGPATH"/right-left.sh || notfound "$1".sh $MONCFGPATH
+        "$MONCFGPATH"/right-left.sh > /dev/null 2>&1 || notfound "$1".sh $MONCFGPATH
         ;;
     *)
         echo "Error: No monitor config named \"$1\""
