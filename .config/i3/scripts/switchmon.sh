@@ -8,6 +8,7 @@ Usage: switchmon.sh <monitor-cfg>
 ---------------------
 left-right  Laptop display on left, external monitor right.
 right-left  Laptop display on right, external monitor left.
+hdmi2-vga   HDMI2 on left, VGA1 on right.
 
 For the above, if two monitors are connected, the laptop
 display is replaced with the other monitor output.
@@ -35,6 +36,9 @@ case "$1" in
         ;;
     right-left)
         "$MONCFGPATH"/right-left.sh > /dev/null 2>&1 || notfound "$1".sh $MONCFGPATH
+        ;;
+    hdmi2-vga)
+        "$MONCFGPATH"/hdmi2-vga.sh > /dev/null 2>&1 || notfound "$1".sh $MONCFGPATH
         ;;
     *)
         echo "Error: No monitor config named \"$1\""
