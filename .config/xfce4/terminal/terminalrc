@@ -31,6 +31,9 @@ MiscShowRelaunchDialog=TRUE
 Encoding=UTF-8
 ShortcutsNoMenukey=TRUE
 ColorForeground=#028afe4adb64
+MiscSearchDialogOpacity=100
+MiscShowUnsafePasteDialog=TRUE
+ShortcutsNoHelpkey=TRUE
 ColorBackground=#070600001515
 ColorPalette=rgb(85,29,141);rgb(102,0,204);rgb(106,132,255);rgb(0,183,182);rgb(39,74,103);rgb(210,97,248);rgb(1,144,125);rgb(156,8,131);rgb(98,5,152);rgb(160,0,255);rgb(73,144,244);rgb(0,255,159);rgb(50,136,210);rgb(174,84,202);rgb(2,204,176);rgb(208,100,246)
 
