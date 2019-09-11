@@ -178,6 +178,10 @@ cdp() {
     pwd
 }
 
+open() {
+    nohup xdg-open "$1" > /dev/null &
+}
+
 # SSH agent session start
 # Taken from: https://stackoverflow.com/a/18915067
 function start_ssh_agent {
