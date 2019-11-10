@@ -84,6 +84,7 @@ execute pathogen#infect()
 
 " LaTeX Version
 let g:tex_flavor = "latex"
+let g:Tex_DefaultTargetFormat='pdf'
 
 " Arduino configuration
 let g:arduino_dir = '/usr/share/arduino'	" Path to 'arduino' directory
