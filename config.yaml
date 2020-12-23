@@ -25,6 +25,10 @@ dotfiles:
   f_bash_env:
     src: bash/bash_env
     dst: ~/.bash_env
+  f_gitconfig:
+    src: src/git/dotfiles/git/gitconfig
+    dst: ~/.gitconfig
+    chmod: '755'
 profiles:
   devoid:
     dotfiles:
@@ -32,3 +36,4 @@ profiles:
     - f_bash_aliases
     - f_bash_profile
     - f_bash_env
+    - f_gitconfig
