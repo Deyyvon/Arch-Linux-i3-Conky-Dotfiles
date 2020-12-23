@@ -1,6 +1,16 @@
 config:
   backup: true
+  banner: true
   create: true
+  diff_command: diff -r -u --color=auto {0} {1}
   dotpath: dotfiles
+  ignoreempty: false
+  keepdot: false
+  link_dotfile_default: nolink
+  link_on_import: nolink
+  longkey: false
+  showdiff: true
+  template_dotfile_default: true
+  workdir: ~/.config/workdir
 dotfiles:
 profiles:
