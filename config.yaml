@@ -13,4 +13,22 @@ config:
   template_dotfile_default: true
   workdir: ~/.config/workdir
 dotfiles:
+  f_bashrc:
+    src: bashrc
+    dst: ~/.bashrc
+  f_bash_aliases:
+    src: bash_aliases
+    dst: ~/.bash_aliases
+  f_bash_profile:
+    src: bash_profile
+    dst: ~/.bash_profile
+  f_bash_env:
+    src: bash_env
+    dst: ~/.bash_env
 profiles:
+  devoid:
+    dotfiles:
+    - f_bashrc
+    - f_bash_aliases
+    - f_bash_profile
+    - f_bash_env

@@ -1,0 +1,18 @@
+# .bash_env
+#
+# Environment variables. Sourced by .bashrc.
+
+{%@@ if profile == "devoid" @@%}
+# Path
+export PATH="$HOME"/bin:"$PATH"
+
+# User service directory
+export SVDIR=~/service
+
+# Satisfy GPG for signing things
+export GPG_TTY=$(tty)
+
+# Tell qt5 to use Wayland backend
+export QT_QPA_PLATFORM=wayland-egl
+export ELM_DISPLAY=wl
+{%@@ endif @@%}

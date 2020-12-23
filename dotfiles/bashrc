@@ -1,0 +1,22 @@
+# .bashrc
+
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+#
+# ENVIRONMENT
+#
+
+source .bash_env
+
+#
+# Aliases
+#
+
+source .bash_aliases
+
+#
+# Prompt
+#
+
+PS1='[\u@\h \W]\$ '
