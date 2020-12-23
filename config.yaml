@@ -14,16 +14,16 @@ config:
   workdir: ~/.config/workdir
 dotfiles:
   f_bashrc:
-    src: bashrc
+    src: bash/bashrc
     dst: ~/.bashrc
   f_bash_aliases:
-    src: bash_aliases
+    src: bash/bash_aliases
     dst: ~/.bash_aliases
   f_bash_profile:
-    src: bash_profile
+    src: bash/bash_profile
     dst: ~/.bash_profile
   f_bash_env:
-    src: bash_env
+    src: bash/bash_env
     dst: ~/.bash_env
 profiles:
   devoid:
