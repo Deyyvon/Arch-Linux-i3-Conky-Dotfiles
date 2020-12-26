@@ -56,8 +56,6 @@
         "format": "{temperatureF}°F "
     },
     "idle_inhibitor": {
-    },
-    "idle_inhibitor": {
         "format": "{icon}",
         "format-icons": {
             "activated": "",
