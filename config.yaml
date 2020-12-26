@@ -26,7 +26,7 @@ dotfiles:
     src: bash/bash_env
     dst: ~/.bash_env
   f_gitconfig:
-    src: src/git/dotfiles/git/gitconfig
+    src: git/gitconfig
     dst: ~/.gitconfig
     chmod: '755'
 profiles:
