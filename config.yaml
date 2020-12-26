@@ -29,6 +29,9 @@ dotfiles:
     src: git/gitconfig
     dst: ~/.gitconfig
     chmod: '755'
+  f_sway_config:
+    src: sway/config
+    dst: ~/.config/sway/config
 profiles:
   devoid:
     dotfiles:
@@ -37,3 +40,4 @@ profiles:
     - f_bash_profile
     - f_bash_env
     - f_gitconfig
+    - f_sway_config
