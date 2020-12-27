@@ -3,6 +3,12 @@
 # Environment variables. Sourced by .bashrc.
 
 {%@@ if profile == "devoid" @@%}
+# For Waybar tray icons to display properly
+export XDG_CURRENT_DESKTOP=Unity
+
+# For FireFox to use Wayland backend
+export MOZ_WAYLAND_ENABLED=1
+
 # Path
 export PATH="$HOME"/bin:"$PATH"
 

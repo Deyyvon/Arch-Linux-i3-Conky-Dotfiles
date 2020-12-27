@@ -1,0 +1,67 @@
+{
+    "layer": "top",
+    "modules-left": ["sway/workspaces", "sway/mode", "sway/window"],
+    "modules-center": ["clock"],
+    "modules-right": ["cpu", "memory", "temperature", "backlight", "pulseaudio", "network", "battery", "idle_inhibitor", "tray"],
+    "sway/window": {
+        "max-length": 50
+    },
+    "battery": {
+        "format": "{capacity}% {icon}",
+        "format-icons": ["", "", "", "", ""],
+        "format-charging": "{capacity}% ",
+        "format-plugged": "{capacity}% "
+    },
+    "clock": {
+        "locale": "C",
+        "format": "{:%a %d %b  %H:%M}",
+        "tooltip": true,
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+    },
+    "cpu": {
+        "format": "{usage}% ",
+        "tooltip": false
+    },
+    "memory": {
+        "format": "{}% "
+    },
+    "tray": {
+	"spacing": 10
+    },
+    "network": {
+        "format-wifi": "{essid} ",
+        "format-ethernet": "{bandwidthUpBits} {bandwidthDownBits} 囹",
+        "format-disconnected": "睊",
+        "tooltip-format-wifi": "{ifname} ({signalStrength}%): {ipaddr}/{cidr}\n{bandwidthUpBits} {bandwidthDownBits}",
+        "tooltip-format-ethernet": "{ifname} ({signalStrength}%): {ipaddr}/{cidr}",
+        "tooltip-format-disconnected": "No network connection."
+    },
+    "pulseaudio": {
+        "format": "{volume}% {icon}",
+        "format-icons": {
+            "default": ["", "", ""]
+        },
+        "format-muted": "",
+        "format-bluetooth": " {volume}% {icon}",
+        "scroll-step": 1,
+        "on-click": "pavucontrol"
+    },
+    "backlight": {
+        "device": "intel_backlight",
+        "format": "{percent}% ",
+        "on-scroll-up": "light -U 1",
+        "on-scroll-down": "light -A 1"
+    },
+    "temperature": {
+        "format": "{temperatureF}°F "
+    },
+    "idle_inhibitor": {
+    },
+    "idle_inhibitor": {
+        "format": "{icon}",
+        "format-icons": {
+            "activated": "",
+            "deactivated": ""
+        }
+    }
+}

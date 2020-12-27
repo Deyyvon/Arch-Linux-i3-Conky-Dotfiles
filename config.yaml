@@ -32,6 +32,9 @@ dotfiles:
   f_sway_config:
     src: sway/config
     dst: ~/.config/sway/config
+  f_waybar_config:
+    src: waybar/config
+    dst: ~/.config/waybar/config
 profiles:
   devoid:
     dotfiles:
@@ -41,3 +44,4 @@ profiles:
     - f_bash_env
     - f_gitconfig
     - f_sway_config
+    - f_waybar_config
