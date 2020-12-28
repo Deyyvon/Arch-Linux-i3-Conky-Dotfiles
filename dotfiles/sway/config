@@ -241,3 +241,6 @@ include /etc/sway/config.d/*
 
 # NetworkManager tray icon
 exec nm-applet --indicator
+
+# Automounting daemon (wrapper for Udisks2)
+exec udiskie --automount --appindicator --notify
