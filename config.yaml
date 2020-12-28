@@ -35,6 +35,9 @@ dotfiles:
   f_waybar_config:
     src: waybar/config
     dst: ~/.config/waybar/config
+  f_dunstrc:
+    src: dunst/dunstrc
+    dst: ~/.config/dunst/dunstrc
 profiles:
   devoid:
     dotfiles:
@@ -45,3 +48,4 @@ profiles:
     - f_gitconfig
     - f_sway_config
     - f_waybar_config
+    - f_dunstrc

@@ -244,3 +244,6 @@ exec nm-applet --indicator
 
 # Automounting daemon (wrapper for Udisks2)
 exec udiskie --automount --appindicator --notify
+
+# Notification daemon
+exec dunst
