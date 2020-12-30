@@ -1,0 +1,2 @@
+# For Firefox to use wayland in the backend
+MOZ_ENABLE_WAYLAND=1

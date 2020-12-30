@@ -41,6 +41,13 @@ dotfiles:
   f_config:
     src: wofi/config
     dst: ~/.config/wofi/config
+  f_env:
+    src: sway/env
+    dst: ~/.config/sway/env
+  f_sway:
+    src: bin/sway
+    dst: ~/bin/sway
+    chmod: '755'
 profiles:
   devoid:
     dotfiles:
@@ -53,3 +60,5 @@ profiles:
     - f_waybar_config
     - f_dunstrc
     - f_config
+    - f_env
+    - f_sway
