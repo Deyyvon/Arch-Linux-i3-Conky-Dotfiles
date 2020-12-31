@@ -10,7 +10,7 @@ export XDG_CURRENT_DESKTOP=Unity
 export QT_QPA_PLATFORMTHEME=qt5ct
 
 # For FireFox to use Wayland backend
-export MOZ_WAYLAND_ENABLED=1
+export MOZ_ENABLE_WAYLAND=1
 
 # Path
 export PATH="$HOME"/bin:"$PATH"
