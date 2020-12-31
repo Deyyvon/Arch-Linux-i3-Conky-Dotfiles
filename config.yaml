@@ -38,6 +38,9 @@ dotfiles:
   f_dunstrc:
     src: dunst/dunstrc
     dst: ~/.config/dunst/dunstrc
+  f_config:
+    src: wofi/config
+    dst: ~/.config/wofi/config
 profiles:
   devoid:
     dotfiles:
@@ -49,3 +52,4 @@ profiles:
     - f_sway_config
     - f_waybar_config
     - f_dunstrc
+    - f_config
