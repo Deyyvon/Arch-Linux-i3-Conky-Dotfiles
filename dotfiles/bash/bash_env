@@ -6,6 +6,9 @@
 # For Waybar tray icons to display properly
 export XDG_CURRENT_DESKTOP=Unity
 
+# Qt5 theming
+export QT_QPA_PLATFORMTHEME=qt5ct
+
 # For FireFox to use Wayland backend
 export MOZ_WAYLAND_ENABLED=1
 
