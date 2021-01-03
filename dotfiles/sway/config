@@ -180,6 +180,13 @@ bindsym XF86AudioRaiseVolume exec pamixer -i 3
     bindsym $mod+a focus parent
 
 #
+# Other Keybindings
+#
+
+# Lock screen on-demand
+bindsym Control+Alt+l exec swaylock
+
+#
 # Looks
 #
 
