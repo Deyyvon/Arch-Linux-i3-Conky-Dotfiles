@@ -48,6 +48,10 @@ dotfiles:
     src: bin/sway
     dst: ~/bin/sway
     chmod: '755'
+  f_clamshell.sh:
+    src: sway/clamshell.sh
+    dst: ~/.config/sway/clamshell.sh
+    chmod: '755'
 profiles:
   devoid:
     dotfiles:
@@ -62,3 +66,4 @@ profiles:
     - f_config
     - f_env
     - f_sway
+    - f_clamshell.sh
