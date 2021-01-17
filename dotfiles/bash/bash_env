@@ -3,15 +3,6 @@
 # Environment variables. Sourced by .bashrc.
 
 {%@@ if profile == "devoid" @@%}
-# For Waybar tray icons to display properly
-export XDG_CURRENT_DESKTOP=Unity
-
-# Qt5 theming
-export QT_QPA_PLATFORMTHEME=qt5ct
-
-# For FireFox to use Wayland backend
-export MOZ_ENABLE_WAYLAND=1
-
 # Path
 export PATH="$HOME"/bin:"$PATH"
 
@@ -20,8 +11,4 @@ export SVDIR=~/service
 
 # Satisfy GPG for signing things
 export GPG_TTY=$(tty)
-
-# Tell qt5 to use Wayland backend
-export QT_QPA_PLATFORM=wayland-egl
-export ELM_DISPLAY=wl
 {%@@ endif @@%}

@@ -1,2 +1,12 @@
 # For Firefox to use wayland in the backend
 MOZ_ENABLE_WAYLAND=1
+
+# For Waybar tray icons to display properly
+export XDG_CURRENT_DESKTOP=Unity
+
+# Qt5 theming
+export QT_QPA_PLATFORMTHEME=qt5ct
+
+# Tell qt5 to use Wayland backend
+export QT_QPA_PLATFORM=wayland-egl
+export ELM_DISPLAY=wl
