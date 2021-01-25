@@ -52,6 +52,9 @@ dotfiles:
     src: sway/clamshell.sh
     dst: ~/.config/sway/clamshell.sh
     chmod: '755'
+  f_kitty.conf:
+    src: kitty/kitty.conf
+    dst: ~/.config/kitty/kitty.conf
 profiles:
   devoid:
     dotfiles:
@@ -67,3 +70,4 @@ profiles:
     - f_env
     - f_sway
     - f_clamshell.sh
+    - f_kitty.conf
