@@ -30,6 +30,52 @@ set $term kitty
 # on the original workspace that the command was run on.
 set $menu killall wofi || wofi
 
+### Looks
+#
+
+# Window colors
+set $background #010016
+set $foreground #96c7d6
+
+set $color0 #010016
+set $color1 #C44063
+set $color2 #E84F65
+set $color3 #FE6E66
+set $color4 #FD956A
+set $color5 #F3D374
+set $color6 #20479B
+set $color7 #96c7d6
+set $color8 #698b95
+set $color9 #C44063
+set $color10 #E84F65
+set $color11 #FE6E66
+set $color12 #FD956A
+set $color13 #F3D374
+set $color14 #20479B
+set $color15 #96c7d6
+
+# border:       the border around the title bar
+# background:   the background of the title bar
+# text:         the text color of the title bar
+# indicator:    the color used to indicate where a new view will open
+# child_border: the color of the border around the view itself
+#
+# component             border  background  text        indicator  child_border
+client.focused          $color0 $background $foreground $color7    $color0
+client.unfocused        $color8 $background $foreground $color7    $color8
+client.focused_inactive $color6 $background $foreground $color7    $color6
+client.urgent           $color1 $background $color1     $color2    $color1
+
+# View borders are 1 pixel with a titlebar
+default_border normal 1
+
+#View gaps are 5 pixels
+gaps inner 5
+
+### Window configuration
+#
+for_window [title="."] title_format "<b>%title</b> (<i>%app_id</i>)"
+
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
