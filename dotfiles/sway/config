@@ -5,7 +5,12 @@
 # Read `man 5 sway` for a complete reference.
 
 # Don't use xwayland
-xwayland disable
+#xwayland disable
+# Applications that rely on X11:
+# - Minecraft (from MultiMC)
+# - udiskie
+# - feh
+xwayland enable
 
 ### Variables
 #
