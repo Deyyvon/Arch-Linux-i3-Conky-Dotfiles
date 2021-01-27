@@ -58,6 +58,9 @@ dotfiles:
   f_style.css:
     src: waybar/style.css
     dst: ~/.config/waybar/style.css
+  f_wallpaper_material_skyline:
+    src: wallpapers/material_skyline.jpg
+    dst: ~/Pictures/Wallpapers/material_skyline.jpg
 profiles:
   devoid:
     dotfiles:
@@ -75,3 +78,4 @@ profiles:
     - f_clamshell.sh
     - f_kitty.conf
     - f_style.css
+    - f_wallpaper_material_skyline
