@@ -55,6 +55,9 @@ dotfiles:
   f_kitty.conf:
     src: kitty/kitty.conf
     dst: ~/.config/kitty/kitty.conf
+  f_style.css:
+    src: waybar/style.css
+    dst: ~/.config/waybar/style.css
 profiles:
   devoid:
     dotfiles:
@@ -71,3 +74,4 @@ profiles:
     - f_sway
     - f_clamshell.sh
     - f_kitty.conf
+    - f_style.css

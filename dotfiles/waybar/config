@@ -1,8 +1,85 @@
 {
     "layer": "top",
-    "modules-left": ["sway/workspaces", "sway/mode", "sway/window"],
-    "modules-center": ["clock"],
-    "modules-right": ["cpu", "memory", "temperature", "backlight", "pulseaudio", "network", "battery", "idle_inhibitor", "tray"],
+    "modules-left": [
+        "sway/workspaces",
+        "custom/right-arrow-dark",
+        "sway/mode"
+    ],
+    "modules-center": [
+        "custom/left-arrow-dark",
+        "clock#1",
+        "custom/left-arrow-light",
+        "custom/left-arrow-dark",
+        "clock#2",
+        "custom/right-arrow-dark",
+        "custom/right-arrow-light",
+        "clock#3",
+        "custom/right-arrow-dark"
+    ],
+    "modules-right": [
+        "custom/left-arrow-dark",
+        "cpu",
+        "custom/left-arrow-light",
+        "custom/left-arrow-dark",
+        "memory",
+        "custom/left-arrow-light",
+        "custom/left-arrow-dark",
+        "temperature",
+        "custom/left-arrow-light",
+        "custom/left-arrow-dark",
+        "backlight",
+        "custom/left-arrow-light",
+        "custom/left-arrow-dark",
+        "pulseaudio",
+        "custom/left-arrow-light",
+        "custom/left-arrow-dark",
+        "network",
+        "custom/left-arrow-light",
+        "custom/left-arrow-dark",
+        "battery",
+        "custom/left-arrow-light",
+        "custom/left-arrow-dark",
+        "idle_inhibitor",
+        "custom/left-arrow-light",
+        "custom/left-arrow-dark",
+        "tray"
+    ],
+    "custom/left-arrow-dark": {
+        "format": "",
+        "tooltip": false
+    },
+    "custom/left-arrow-light": {
+        "format": "",
+        "tooltip": false
+    },
+    "custom/right-arrow-dark": {
+        "format": "",
+        "tooltip": false
+    },
+    "custom/right-arrow-light": {
+        "format": "",
+        "tooltip": false
+    },
+    "sway/workspaces": {
+        "disable-scroll": true,
+        "format": "{name}"
+    },
+    "clock#1": {
+        "locale": "C",
+        "format": "{:%a}",
+        "tooltip": false
+    },
+    "clock#2": {
+        "locale": "C",
+        "format": "{:%H:%M}",
+        "tooltip": false
+    },
+    "clock#3": {
+        "locale": "C",
+        "format": "{:%d %b}",
+        "tooltip": true,
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+    },
     "sway/window": {
         "max-length": 50
     },
