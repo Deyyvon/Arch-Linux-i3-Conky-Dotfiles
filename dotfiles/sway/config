@@ -61,8 +61,8 @@ set $color15 #96c7d6
 # child_border: the color of the border around the view itself
 #
 # component             border  background  text        indicator  child_border
-client.focused          $color0 $background $foreground $color7    $color0
-client.unfocused        $color8 $background $foreground $color7    $color8
+client.unfocused        $color0 $background $foreground $color7    $color0
+client.focused          $color8 $background $foreground $color7    $color8
 client.focused_inactive $color6 $background $foreground $color7    $color6
 client.urgent           $color1 $background $color1     $color2    $color1
 
