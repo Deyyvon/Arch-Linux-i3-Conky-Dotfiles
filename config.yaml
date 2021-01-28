@@ -61,6 +61,9 @@ dotfiles:
   f_wallpaper_material_skyline:
     src: wallpapers/material_skyline.jpg
     dst: ~/Pictures/Wallpapers/material_skyline.jpg
+  f_ranger_rc.conf:
+    src: ranger/rc.conf
+    dst: ~/.config/ranger/rc.conf
 profiles:
   devoid:
     dotfiles:
@@ -79,3 +82,4 @@ profiles:
     - f_kitty.conf
     - f_style.css
     - f_wallpaper_material_skyline
+    - f_ranger_rc.conf

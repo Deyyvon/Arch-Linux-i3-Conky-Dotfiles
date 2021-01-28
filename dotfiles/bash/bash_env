@@ -11,4 +11,7 @@ export SVDIR=~/service
 
 # Satisfy GPG for signing things
 export GPG_TTY=$(tty)
+
+# Don't load system config before user config for ranger
+export RANGER_LOAD_DEFAULT_RC=FALSE
 {%@@ endif @@%}
