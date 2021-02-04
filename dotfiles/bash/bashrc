@@ -7,13 +7,13 @@
 # ENVIRONMENT
 #
 
-source .bash_env
+source ~/.bash_env
 
 #
 # Aliases
 #
 
-source .bash_aliases
+source ~/.bash_aliases
 
 #
 # Prompt
