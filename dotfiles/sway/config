@@ -141,10 +141,11 @@ workspace 10 output $DISP2
 # Read `man 5 sway-input` for more information about this section.
 #
 # Natural scrolling for touchpads
-input type:touchpad {
-    tap enabled
-    natural_scroll enabled
-}
+input type:touchpad events disabled
+#input type:touchpad {
+#    tap enabled
+#    natural_scroll enabled
+#}
 #
 # Volume/Mute keys
 bindsym XF86AudioMute        exec pamixer -t
