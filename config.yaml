@@ -64,6 +64,9 @@ dotfiles:
   f_ranger_rc.conf:
     src: ranger/rc.conf
     dst: ~/.config/ranger/rc.conf
+  f_cmus_rc:
+    src: cmus/rc
+    dst: ~/.config/cmus/rc
 profiles:
   devoid:
     dotfiles:
@@ -83,3 +86,4 @@ profiles:
     - f_style.css
     - f_wallpaper_material_skyline
     - f_ranger_rc.conf
+    - f_cmus_rc
