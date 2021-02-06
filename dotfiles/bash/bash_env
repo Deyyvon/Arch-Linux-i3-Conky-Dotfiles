@@ -3,6 +3,9 @@
 # Environment variables. Sourced by .bashrc.
 
 {%@@ if profile == "devoid" @@%}
+# TTY Colors
+source ~/.config/tty/colors-tty.sh
+
 # Path
 export PATH="$HOME"/bin:"$PATH"
 
