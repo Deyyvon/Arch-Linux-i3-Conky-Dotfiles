@@ -67,6 +67,13 @@ dotfiles:
   f_cmus_rc:
     src: cmus/rc
     dst: ~/.config/cmus/rc
+  f_colors-tty.sh:
+    src: tty/colors-tty.sh
+    dst: ~/.config/tty/colors-tty.sh
+    chmod: '755'
+  f_cmus_notify.cfg:
+    src: cmus/notify.cfg
+    dst: ~/.config/cmus/notify.cfg
 profiles:
   devoid:
     dotfiles:
@@ -87,3 +94,5 @@ profiles:
     - f_wallpaper_material_skyline
     - f_ranger_rc.conf
     - f_cmus_rc
+    - f_colors-tty.sh
+    - f_cmus_notify.cfg
