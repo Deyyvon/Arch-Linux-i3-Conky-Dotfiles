@@ -152,6 +152,12 @@ bindsym XF86AudioMute        exec pamixer -t
 bindsym XF86AudioMicMute     exec amixer -q sset Capture toggle
 bindsym XF86AudioLowerVolume exec pamixer -d 3
 bindsym XF86AudioRaiseVolume exec pamixer -i 3
+#
+# Media keys
+bindsym XF86AudioPlay exec playerctl play-pause
+bindsym XF86AudioStop exec playerctl stop
+bindsym XF86AudioNext exec playerctl next
+bindsym XF86AudioPrev exec playerctl previous
 
 ### Key bindings
 #
