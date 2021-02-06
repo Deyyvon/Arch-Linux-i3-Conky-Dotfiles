@@ -1,19 +1,19 @@
 # cmus configuration file
 
 # Format of currently playing track
-set format_current=%{tracknumber}. %{title} - %{albumartist} - %{album} %= %{codec} (%{date})
+set format_current=%{?tracknumber?%{tracknumber}.} %{title} - %{albumartist} %{?album?- %{album}}%= %{codec} (%{date})
 set altformat_current=%{filename}
 
 # Format of tracks in list views (2-4)
-set format_playlist=%3{tracknumber}. %-21%{title}   %{album}   %{albumartist} %= %{codec} %{duration} %{?X!=0?%3X ?    }
-set format_playlist_va=%3{tracknumber}. %-21%{title}   %{album}   (%{albumartist}) %= %{codec} %{duration} %{?X!=0?%3X ?    }
-set altformat_playlist=%{path}%= %{codec} %{duration} %{?X!=0?%3X ?    }
+set format_playlist=%{?tracknumber?%3{tracknumber}.?    } %-25%{title}  %-20%{albumartist}   %-20%{album}%= %{codec} %{duration} %{?play_count!=0?%3{play_count} ?    }
+set format_playlist_va=%{?tracknumber?%3{tracknumber}.?    } %-25%{title} (%-21%{albumartist}) %-20%{album}%= %{codec} %{duration} %{?play_count!=0?%3{play_count} ?    }
+set altformat_playlist=%{path}%= %{codec} %{duration} %{?play_count!=0?%3{play_count} ?    }
 
 # Format of terminal title
 set format_title=%{title} - %{artist}
 set altformat_title=%{filename}
 
 # Format of tracks in tree view (1)
-set format_trackwin=%3{tracknumber}. %{title}%= %{codec} %{date} %{duration}
-set format_trackwin_va=%3{tracknumber}. %{title} (%{albumartist})%= %{codec} %{date} %{duration}
+set format_trackwin=%{?tracknumber?%3{tracknumber}.} %{title}%= %{codec} %{date} %{duration}
+set format_trackwin_va=%{?tracknumber?%3{tracknumber}.} %{title} (%{albumartist})%= %{codec} %{date} %{duration}
 set altformat_trackwin=%{filename}%= %{codec} %{date}
