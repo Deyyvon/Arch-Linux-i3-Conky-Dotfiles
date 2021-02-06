@@ -1,8 +1,8 @@
 # cmus configuration file
 
 # Format of currently playing track
-set format_current=%{?tracknumber?%{tracknumber}.} %{title} - %{albumartist} %{?album?- %{album}}%= %{codec} (%{date})
-set altformat_current=%{filename}
+set format_current=%{?tracknumber?%3{tracknumber}.} %{title} - %{albumartist} %{?album?- %{album}}%= %{codec} (%{date})
+set altformat_current= %{filename}
 
 # Format of tracks in list views (2-4)
 set format_playlist=%{?tracknumber?%3{tracknumber}.?    } %-25%{title}  %-20%{albumartist}   %-20%{album}%= %{codec} %{duration} %{?play_count!=0?%3{play_count} ?    }
