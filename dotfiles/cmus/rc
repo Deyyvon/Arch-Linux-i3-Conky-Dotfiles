@@ -5,8 +5,8 @@ set format_current=%{?tracknumber?%3{tracknumber}.} %{title} - %{albumartist} %{
 set altformat_current= %{filename}
 
 # Format of tracks in list views (2-4)
-set format_playlist=%{?tracknumber?%3{tracknumber}.?    } %-25%{title}  %-20%{albumartist}   %-20%{album}%= %{codec} %{duration} %{?play_count!=0?%3{play_count} ?    }
-set format_playlist_va=%{?tracknumber?%3{tracknumber}.?    } %-25%{title} (%-21%{albumartist}) %-20%{album}%= %{codec} %{duration} %{?play_count!=0?%3{play_count} ?    }
+set format_playlist=%{?tracknumber?%3{tracknumber}.?    } %-25%{title}  %-20%{albumartist}  %-20%{album}%= %{codec} %{duration} %{?play_count!=0?%3{play_count} ?    }
+set format_playlist_va=%{?tracknumber?%3{tracknumber}.?    } %-25%{title} (%-20%{albumartist}) %-20%{album}%= %{codec} %{duration} %{?play_count!=0?%3{play_count} ?    }
 set altformat_playlist=%{path}%= %{codec} %{duration} %{?play_count!=0?%3{play_count} ?    }
 
 # Format of terminal title
