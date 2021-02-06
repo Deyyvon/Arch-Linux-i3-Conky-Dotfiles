@@ -10,7 +10,7 @@ set format_playlist_va=%{?tracknumber?%3{tracknumber}.?    } %-25%{title} (%-21%
 set altformat_playlist=%{path}%= %{codec} %{duration} %{?play_count!=0?%3{play_count} ?    }
 
 # Format of terminal title
-set format_title=%{title} - %{artist}
+set format_title=%-20{title} - %-20{artist}
 set altformat_title=%{filename}
 
 # Format of tracks in tree view (1)
