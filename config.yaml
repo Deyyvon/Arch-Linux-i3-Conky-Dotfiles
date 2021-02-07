@@ -77,6 +77,9 @@ dotfiles:
   f_cmus_devoid.theme:
     src: cmus/devoid.theme
     dst: ~/.config/cmus/devoid.theme
+  f_wofi_style.css:
+    src: wofi/style.css
+    dst: ~/.config/wofi/style.css
 profiles:
   devoid:
     dotfiles:
@@ -100,3 +103,4 @@ profiles:
     - f_colors-tty.sh
     - f_cmus_notify.cfg
     - f_cmus_devoid.theme
+    - f_wofi_style.css

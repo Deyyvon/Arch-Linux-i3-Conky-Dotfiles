@@ -1,0 +1,42 @@
+#input,
+#window {
+    color:            #fe6e66;
+    background-color: #010016;
+    border:           1px solid #fe6e66;
+}
+
+#input image {
+    color: #fe6e66;
+}
+
+#outer-box {
+    border: 1px solid #fe6e66;
+}
+
+#input {
+    margin: 5px;
+}
+
+#entry,
+#entry:unselected {
+    color: #96c7d6;
+}
+
+#entry:selected {
+    border-top:       1px solid #fe6e66;
+    border-bottom:    1px solid #fe6e66;
+    background-color: #fe6e66;
+    color:            #010016;
+}
+
+#text {
+    color:       #fe6e66;
+    margin-left: 5px;
+    font-family: JetBrainsMono Nerd Font;
+    font-size:   12px;
+}
+
+#text:selected {
+    color:       #010016;
+    font-weight: bold;
+}
