@@ -74,6 +74,9 @@ dotfiles:
   f_cmus_notify.cfg:
     src: cmus/notify.cfg
     dst: ~/.config/cmus/notify.cfg
+  f_cmus_devoid.theme:
+    src: cmus/devoid.theme
+    dst: ~/.config/cmus/devoid.theme
 profiles:
   devoid:
     dotfiles:
@@ -96,3 +99,4 @@ profiles:
     - f_cmus_rc
     - f_colors-tty.sh
     - f_cmus_notify.cfg
+    - f_cmus_devoid.theme
