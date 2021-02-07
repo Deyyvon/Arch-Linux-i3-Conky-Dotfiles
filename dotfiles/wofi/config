@@ -1,2 +1,5 @@
 gtk_dark=true
 mode=drun,run
+allow_images=true
+image_size=16
+insensitive=true
