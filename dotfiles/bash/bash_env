@@ -7,7 +7,7 @@
 source ~/.config/tty/colors-tty.sh
 
 # Path
-export PATH="$HOME/bin:$HOME/perl5/bin${PATH:+:${PATH}}"
+export PATH="$HOME/bin:$HOME/.local/bin:$HOME/perl5/bin${PATH:+:${PATH}}"
 export PERL5LIB="/home/synackd/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
 export PERL_LOCAL_LIB_ROOT="/home/synackd/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
 export PERL_MB_OPT="--install_base \"/home/synackd/perl5\""; export PERL_MB_OPT;
