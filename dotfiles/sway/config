@@ -272,7 +272,7 @@ bindsym ctrl+shift+period exec dunstctl context
 #
 
 # Lock screen on-demand
-bindsym Control+Alt+l exec swaylock
+bindsym Control+Alt+l exec ~/.config/sway/lock.sh
 
 #
 # Looks
@@ -348,4 +348,4 @@ exec dunst
 
 # Suspend/Lock after inactivity
 # sudo needs to be configured to not require a password to run zzz for this user
-exec swayidle timeout 600 'swaylock -f && sudo /usr/sbin/zzz'
+exec swayidle timeout 600 '~/.config/sway/lock.sh && sudo zzz'

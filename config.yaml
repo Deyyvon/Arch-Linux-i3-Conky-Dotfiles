@@ -83,6 +83,10 @@ dotfiles:
   f_ranger_rifle.conf:
     src: ranger/rifle.conf
     dst: ~/.config/ranger/rifle.conf
+  f_sway_lock.sh:
+    src: sway/lock.sh
+    dst: ~/.config/sway/lock.sh
+    chmod: '755'
 profiles:
   devoid:
     dotfiles:
@@ -108,3 +112,4 @@ profiles:
     - f_cmus_devoid.theme
     - f_wofi_style.css
     - f_ranger_rifle.conf
+    - f_sway_lock.sh
