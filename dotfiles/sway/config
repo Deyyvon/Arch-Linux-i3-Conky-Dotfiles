@@ -337,6 +337,14 @@ include /etc/sway/config.d/*
 # Autostart
 #
 
+# Set proper GTK settings
+set $gnome-schema org.gnome.desktop.interface
+exec_always {
+    gsettings set $gnome-schema gtk-theme 'Arc-Dark'
+    gsettings set $gnome-schema icon-theme 'Papirus-Dark'
+    gsettings set $gnome-schema cursor-theme 'Breeze Hacked'
+}
+
 # NetworkManager tray icon
 exec nm-applet --indicator
 
