@@ -6,6 +6,9 @@
 # TTY Colors
 source ~/.config/tty/colors-tty.sh
 
+# Set preferred editor
+export EDITOR=/usr/sbin/vim
+
 # Path
 export PATH="$HOME/bin:$HOME/.local/bin:$HOME/perl5/bin${PATH:+:${PATH}}"
 export PERL5LIB="/home/synackd/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
