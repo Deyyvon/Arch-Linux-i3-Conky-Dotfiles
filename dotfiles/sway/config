@@ -159,11 +159,11 @@ bindsym XF86AudioStop exec playerctl stop
 bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 #
-# Dunst notification keys
-bindsym ctrl+space        exec dunstctl close
-bindsym ctrl+shift+space  exec dunstctl close-all
-bindsym ctrl+grave        exec dunstctl history-pop
-bindsym ctrl+shift+period exec dunstctl context
+# Mako notification keys
+bindsym ctrl+space        exec makoctl dismiss
+bindsym ctrl+shift+space  exec makoctl dismiss --all
+bindsym ctrl+grave        exec makoctl restore
+bindsym ctrl+shift+period exec makoctl menu wofi --dmenu --prompt='Select Action: '
 
 ### Key bindings
 #
@@ -352,7 +352,7 @@ exec nm-applet --indicator
 exec udiskie --automount --appindicator --notify
 
 # Notification daemon
-exec dunst
+exec mako
 
 # Suspend/Lock after inactivity
 # sudo needs to be configured to not require a password to run zzz for this user

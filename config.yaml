@@ -87,6 +87,9 @@ dotfiles:
     src: sway/lock.sh
     dst: ~/.config/sway/lock.sh
     chmod: '755'
+  f_mako_config:
+    src: mako/config
+    dst: ~/.config/mako/config
 profiles:
   devoid:
     dotfiles:
@@ -97,7 +100,6 @@ profiles:
     - f_gitconfig
     - f_sway_config
     - f_waybar_config
-    - f_dunstrc
     - f_config
     - f_env
     - f_sway
@@ -113,3 +115,4 @@ profiles:
     - f_wofi_style.css
     - f_ranger_rifle.conf
     - f_sway_lock.sh
+    - f_mako_config
