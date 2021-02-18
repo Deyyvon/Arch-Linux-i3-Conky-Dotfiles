@@ -1,5 +1,8 @@
 # cmus configuration file
 
+# Notifier to display what is playing
+set status_display_program=~/bin/cmus-notify
+
 # Format of currently playing track
 set format_current=%{?tracknumber?%3{tracknumber}.} %{title} - %{albumartist} %{?album?- %{album}}%= %{codec} (%{date})
 set altformat_current= %{filename}
