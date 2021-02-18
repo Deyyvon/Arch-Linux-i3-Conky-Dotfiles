@@ -27,13 +27,15 @@ progress-color=over #f3d374ff
 max-icon-size=128
 icon-path=/usr/share/icons/Papirus-Dark/32x32/ststus
 group-by=app-name
+ignore-timeout=0
+default-timeout=5000
 
 [urgency="low"]
 text-color=#f3d374ff
 border-color=#f3d374ff
 progress-color=over #f3d374ff
 ignore-timeout=0
-default-timeout=5000
+default-timeout=10000
 
 [urgency="normal"]
 text-color=#fd956aff
