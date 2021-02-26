@@ -4,12 +4,12 @@
 set status_display_program=~/bin/cmus-notify
 
 # Format of currently playing track
-set format_current=%{?tracknumber?%3{tracknumber}.} %{title} - %{albumartist} %{?album?- %{album}}%= %{codec} (%{date})
+set format_current= %{title} - %{albumartist} %{?album?- %{album}}%= %{codec} (%{date})
 set altformat_current= %{filename}
 
 # Format of tracks in list views (2-4)
-set format_playlist=%{?tracknumber?%3{tracknumber}.?    } %-25%{title}  %-20%{albumartist}  %-20%{album}%= %{codec} %{duration} %{?play_count!=0?%3{play_count} ?    }
-set format_playlist_va=%{?tracknumber?%3{tracknumber}.?    } %-25%{title} (%-20%{albumartist}) %-20%{album}%= %{codec} %{duration} %{?play_count!=0?%3{play_count} ?    }
+set format_playlist= %-25%{title}  %-20%{albumartist}  %-20%{album}%= %{codec} %{duration} %{?play_count!=0?%3{play_count} ?    }
+set format_playlist_va= %-25%{title} (%-20%{albumartist}) %-20%{album}%= %{codec} %{duration} %{?play_count!=0?%3{play_count} ?    }
 set altformat_playlist=%{path}%= %{codec} %{duration} %{?play_count!=0?%3{play_count} ?    }
 
 # Format of terminal title
