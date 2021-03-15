@@ -96,27 +96,27 @@ dotfiles:
 profiles:
   devoid:
     dotfiles:
-    - f_bashrc
     - f_bash_aliases
-    - f_bash_profile
     - f_bash_env
-    - f_gitconfig
-    - f_sway_config
-    - f_waybar_config
-    - f_wofi_config
-    - f_sway_env
-    - f_sway
+    - f_bash_profile
+    - f_bashrc
     - f_clamshell.sh
-    - f_kitty.conf
-    - f_kitty_colors.conf
-    - f_style.css
-    - f_wallpaper_material_skyline
-    - f_ranger_rc.conf
+    - f_cmus_devoid.theme
+    - f_cmus_notify.cfg
     - f_cmus_rc
     - f_colors-tty.sh
-    - f_cmus_notify.cfg
-    - f_cmus_devoid.theme
-    - f_wofi_style.css
-    - f_ranger_rifle.conf
-    - f_sway_lock.sh
+    - f_gitconfig
+    - f_kitty.conf
+    - f_kitty_colors.conf
     - f_mako_config
+    - f_ranger_rc.conf
+    - f_ranger_rifle.conf
+    - f_style.css
+    - f_sway
+    - f_sway_config
+    - f_sway_env
+    - f_sway_lock.sh
+    - f_wallpaper_material_skyline
+    - f_waybar_config
+    - f_wofi_config
+    - f_wofi_style.css
