@@ -38,10 +38,10 @@ dotfiles:
   f_dunstrc:
     src: dunst/dunstrc
     dst: ~/.config/dunst/dunstrc
-  f_config:
+  f_wofi_config:
     src: wofi/config
     dst: ~/.config/wofi/config
-  f_env:
+  f_sway_env:
     src: sway/env
     dst: ~/.config/sway/env
   f_sway:
@@ -100,8 +100,8 @@ profiles:
     - f_gitconfig
     - f_sway_config
     - f_waybar_config
-    - f_config
-    - f_env
+    - f_wofi_config
+    - f_sway_env
     - f_sway
     - f_clamshell.sh
     - f_kitty.conf
