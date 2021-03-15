@@ -1,0 +1,124 @@
+* {
+    /* `otf-font-awesome` is required to be installed for icons */
+    font-family: monospace;
+    font-size: 12px;
+    min-height: 12px;
+}
+
+window#waybar {
+    /*background: #292b2e;*/ /* grey */
+    background: #290655;
+    color: #fdf6e3;
+}
+
+#custom-right-arrow-dark,
+#custom-left-arrow-dark {
+    color: #010016;
+}
+#custom-right-arrow-light,
+#custom-left-arrow-light {
+    /*color: #292b2e;*/ /* grey */
+    color: #290655;
+    background: #010016;
+}
+
+#workspaces,
+#clock.1,
+#clock.2,
+#clock.3,
+#battery,
+#clock,
+#cpu,
+#memory,
+#tray,
+#network,
+#pulseaudio,
+#backlight,
+#temperature,
+#idle_inhibitor {
+    background: #010016;
+}
+
+#workspaces button {
+    padding: 0 1px;
+    color: #96c7d6;
+}
+
+#workspaces button:hover {
+    /* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
+    box-shadow: inherit;
+    text-shadow: inherit;
+    /* --- */
+    padding: 0 1px;
+    background: #010016;
+    border-color: #96c7d6;
+}
+
+#workspaces button.focused {
+    color: #fd956a;
+    font-weight: bold;
+}
+
+#workspaces button.urgent {
+    background-color: #eb4d4b;
+}
+
+#battery,
+#clock,
+#cpu,
+#memory,
+#tray,
+#network,
+#pulseaudio,
+#backlight,
+#temperature,
+#idle_inhibitor {
+    padding: 0 10px;
+}
+
+#clock.1,
+#clock.2,
+#clock.3 {
+    /*color: #96c7d6;*/
+    color: #67fef0;
+}
+
+#cpu {
+    color: #c44063;
+}
+
+#memory {
+    color: #e84f65;
+}
+
+#temperature {
+    color: #fe6e66;
+}
+
+#backlight {
+    color: #fd956a;
+}
+
+#pulseaudio {
+    color: #f3d374;
+}
+
+#network {
+    color: #96c7d6;
+}
+
+#battery {
+    color: #698b95;
+}
+
+#battery.critical {
+    color: #c44063;
+}
+
+#idle_inhibitor {
+    color: #20479b;
+}
+
+#idle_inhibitor.activated {
+    color: #67fef0;
+}

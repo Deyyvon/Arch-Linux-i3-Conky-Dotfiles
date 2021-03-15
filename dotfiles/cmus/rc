@@ -1,0 +1,22 @@
+# cmus configuration file
+
+# Notifier to display what is playing
+set status_display_program=~/bin/cmus-notify
+
+# Format of currently playing track
+set format_current= %{title} - %{albumartist} %{?album?- %{album}}%= %{codec} (%{date})
+set altformat_current= %{filename}
+
+# Format of tracks in list views (2-4)
+set format_playlist= %-25%{title}  %-20%{albumartist}  %-20%{album}%= %{codec} %{duration} %{?play_count!=0?%3{play_count} ?    }
+set format_playlist_va= %-25%{title} (%-20%{albumartist}) %-20%{album}%= %{codec} %{duration} %{?play_count!=0?%3{play_count} ?    }
+set altformat_playlist=%{path}%= %{codec} %{duration} %{?play_count!=0?%3{play_count} ?    }
+
+# Format of terminal title
+set format_title=%-20{title} - %-20{artist}
+set altformat_title=%{filename}
+
+# Format of tracks in tree view (1)
+set format_trackwin=%{?tracknumber?%3{tracknumber}.} %{title}%= %{codec} %{date} %{duration}
+set format_trackwin_va=%{?tracknumber?%3{tracknumber}.} %{title} (%{albumartist})%= %{codec} %{date} %{duration}
+set altformat_trackwin=%{filename}%= %{codec} %{date}

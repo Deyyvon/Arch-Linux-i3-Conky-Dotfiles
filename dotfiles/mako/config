@@ -1,0 +1,52 @@
+# ███╗   ███╗ █████╗ ██╗  ██╗ ██████╗ 
+# ████╗ ████║██╔══██╗██║ ██╔╝██╔═══██╗
+# ██╔████╔██║███████║█████╔╝ ██║   ██║
+# ██║╚██╔╝██║██╔══██║██╔═██╗ ██║   ██║
+# ██║ ╚═╝ ██║██║  ██║██║  ██╗╚██████╔╝
+# ╚═╝     ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝ 
+# devoid theme by synack.d, 2021
+
+#
+# Global
+#
+
+max-history=10
+
+#
+# Style
+#
+
+font=Source Code Pro 8
+background-color=#010016ff
+text-color=#f3d374ff
+padding=8
+border-size=3
+border-color=#f3d374ff
+border-radius=5
+progress-color=over #f3d374ff
+max-icon-size=128
+icon-path=/usr/share/icons/Papirus-Dark/32x32/ststus
+group-by=app-name
+ignore-timeout=0
+default-timeout=5000
+
+[urgency="low"]
+text-color=#f3d374ff
+border-color=#f3d374ff
+progress-color=over #f3d374ff
+ignore-timeout=0
+default-timeout=10000
+
+[urgency="normal"]
+text-color=#fd956aff
+border-color=#fd956aff
+progress-color=over #f3d374ff
+ignore-timeout=1
+default-timeout=15000
+
+[urgency="high"]
+text-color=#e84f65ff
+border-color=#c44063
+progress-color=#e84f65ff
+ignore-timeout=1
+default-timeout=0

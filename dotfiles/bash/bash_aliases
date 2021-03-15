@@ -1,0 +1,10 @@
+# .bash_aliases
+#
+# Sourced by .bashrc.
+
+alias diff='diff -ru --color=auto'
+alias dotdrop="dotdrop --cfg=~/src/git/dotfiles/config.yaml"
+alias ls='ls -h --file-type --color=auto'
+alias l='ls'
+alias ll='ls -l'
+alias lll='ls -al'

@@ -1,6 +1,118 @@
 config:
   backup: true
+  banner: true
   create: true
+  diff_command: diff -r -u --color=auto {0} {1}
   dotpath: dotfiles
+  ignoreempty: false
+  keepdot: false
+  link_dotfile_default: nolink
+  link_on_import: nolink
+  longkey: false
+  showdiff: true
+  template_dotfile_default: true
+  workdir: ~/.config/workdir
 dotfiles:
+  f_bashrc:
+    src: bash/bashrc
+    dst: ~/.bashrc
+  f_bash_aliases:
+    src: bash/bash_aliases
+    dst: ~/.bash_aliases
+  f_bash_profile:
+    src: bash/bash_profile
+    dst: ~/.bash_profile
+  f_bash_env:
+    src: bash/bash_env
+    dst: ~/.bash_env
+  f_gitconfig:
+    src: git/gitconfig
+    dst: ~/.gitconfig
+    chmod: '755'
+  f_sway_config:
+    src: sway/config
+    dst: ~/.config/sway/config
+  f_waybar_config:
+    src: waybar/config
+    dst: ~/.config/waybar/config
+  f_dunstrc:
+    src: dunst/dunstrc
+    dst: ~/.config/dunst/dunstrc
+  f_config:
+    src: wofi/config
+    dst: ~/.config/wofi/config
+  f_env:
+    src: sway/env
+    dst: ~/.config/sway/env
+  f_sway:
+    src: bin/sway
+    dst: ~/bin/sway
+    chmod: '755'
+  f_clamshell.sh:
+    src: sway/clamshell.sh
+    dst: ~/.config/sway/clamshell.sh
+    chmod: '755'
+  f_kitty.conf:
+    src: kitty/kitty.conf
+    dst: ~/.config/kitty/kitty.conf
+  f_style.css:
+    src: waybar/style.css
+    dst: ~/.config/waybar/style.css
+  f_wallpaper_material_skyline:
+    src: wallpapers/material_skyline.jpg
+    dst: ~/Pictures/Wallpapers/material_skyline.jpg
+  f_ranger_rc.conf:
+    src: ranger/rc.conf
+    dst: ~/.config/ranger/rc.conf
+  f_cmus_rc:
+    src: cmus/rc
+    dst: ~/.config/cmus/rc
+  f_colors-tty.sh:
+    src: tty/colors-tty.sh
+    dst: ~/.config/tty/colors-tty.sh
+    chmod: '755'
+  f_cmus_notify.cfg:
+    src: cmus/notify.cfg
+    dst: ~/.config/cmus/notify.cfg
+  f_cmus_devoid.theme:
+    src: cmus/devoid.theme
+    dst: ~/.config/cmus/devoid.theme
+  f_wofi_style.css:
+    src: wofi/style.css
+    dst: ~/.config/wofi/style.css
+  f_ranger_rifle.conf:
+    src: ranger/rifle.conf
+    dst: ~/.config/ranger/rifle.conf
+  f_sway_lock.sh:
+    src: sway/lock.sh
+    dst: ~/.config/sway/lock.sh
+    chmod: '755'
+  f_mako_config:
+    src: mako/config
+    dst: ~/.config/mako/config
 profiles:
+  devoid:
+    dotfiles:
+    - f_bashrc
+    - f_bash_aliases
+    - f_bash_profile
+    - f_bash_env
+    - f_gitconfig
+    - f_sway_config
+    - f_waybar_config
+    - f_config
+    - f_env
+    - f_sway
+    - f_clamshell.sh
+    - f_kitty.conf
+    - f_style.css
+    - f_wallpaper_material_skyline
+    - f_ranger_rc.conf
+    - f_cmus_rc
+    - f_colors-tty.sh
+    - f_cmus_notify.cfg
+    - f_cmus_devoid.theme
+    - f_wofi_style.css
+    - f_ranger_rifle.conf
+    - f_sway_lock.sh
+    - f_mako_config
