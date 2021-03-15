@@ -19,9 +19,16 @@ export PERL_MM_OPT="INSTALL_BASE=/home/synackd/perl5"; export PERL_MM_OPT;
 # User service directory
 export SVDIR=~/service
 
+{%@@ elif profile == "monarch" @@%}
+# Set preferred editor
+export EDITOR=/usr/bin/vim
+
+# Path
+export PATH="$HOME/bin:$HOME/.local/bin${PATH:+:${PATH}}"
+
+{%@@ endif @@%}
 # Satisfy GPG for signing things
 export GPG_TTY=$(tty)
 
 # Don't load system config before user config for ranger
 export RANGER_LOAD_DEFAULT_RC=FALSE
-{%@@ endif @@%}

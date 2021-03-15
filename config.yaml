@@ -28,7 +28,7 @@ dotfiles:
   f_gitconfig:
     src: git/gitconfig
     dst: ~/.gitconfig
-    chmod: '755'
+    chmod: '644'
   f_sway_config:
     src: sway/config
     dst: ~/.config/sway/config
@@ -120,3 +120,11 @@ profiles:
     - f_waybar_config
     - f_wofi_config
     - f_wofi_style.css
+  monarch:
+    dotfiles:
+    - f_bash_aliases
+    - f_bash_env
+    - f_bash_profile
+    - f_bashrc
+    - f_gitconfig
+    - f_kitty.conf
