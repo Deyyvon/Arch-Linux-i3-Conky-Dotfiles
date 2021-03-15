@@ -55,6 +55,9 @@ dotfiles:
   f_kitty.conf:
     src: kitty/kitty.conf
     dst: ~/.config/kitty/kitty.conf
+  f_kitty_colors.conf:
+    src: kitty/colors.conf
+    dst: ~/.config/kitty/colors.conf
   f_style.css:
     src: waybar/style.css
     dst: ~/.config/waybar/style.css
@@ -105,6 +108,7 @@ profiles:
     - f_sway
     - f_clamshell.sh
     - f_kitty.conf
+    - f_kitty_colors.conf
     - f_style.css
     - f_wallpaper_material_skyline
     - f_ranger_rc.conf
