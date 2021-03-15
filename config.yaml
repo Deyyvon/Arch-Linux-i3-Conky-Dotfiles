@@ -128,3 +128,5 @@ profiles:
     - f_bashrc
     - f_gitconfig
     - f_kitty.conf
+    - f_ranger_rc.conf
+    - f_ranger_rifle.conf
