@@ -1,3 +1,5 @@
+actions:
+  ranger_devicons: test -e ~/.config/ranger/plugins/ranger_devicons || git clone https://github.com/alexanderheurissen/ranger/devicons ~/.config/ranger/plugins/ranger_devicons
 config:
   backup: true
   banner: true
@@ -67,6 +69,8 @@ dotfiles:
   f_ranger_rc.conf:
     src: ranger/rc.conf
     dst: ~/.config/ranger/rc.conf
+    actions:
+      - ranger_devicons
   f_cmus_rc:
     src: cmus/rc
     dst: ~/.config/cmus/rc
