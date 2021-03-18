@@ -97,6 +97,9 @@ dotfiles:
   f_mako_config:
     src: mako/config
     dst: ~/.config/mako/config
+  f_xprofile:
+    src: x/xprofile
+    dst: ~/.xprofile
 profiles:
   devoid:
     dotfiles:
@@ -134,3 +137,4 @@ profiles:
     - f_kitty.conf
     - f_ranger_rc.conf
     - f_ranger_rifle.conf
+    - f_xprofile
