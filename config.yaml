@@ -103,6 +103,9 @@ dotfiles:
   f_i3_config:
     src: i3/config
     dst: ~/.config/i3/config
+  f_wallpaper_space_surfer.jpg:
+    src: wallpapers/space_surfer.jpg
+    dst: ~/Pictures/Wallpapers/space_surfer.jpg
 profiles:
   devoid:
     dotfiles:
@@ -141,4 +144,5 @@ profiles:
     - f_kitty.conf
     - f_ranger_rc.conf
     - f_ranger_rifle.conf
+    - f_wallpaper_space_surfer.jpg
     - f_xprofile
