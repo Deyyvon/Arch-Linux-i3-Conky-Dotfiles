@@ -78,7 +78,7 @@ font pango:JetBrainsMono Nerd Font 9
 #font pango:DejaVu Sans Mono 8
 
 # Set the wallpaper image
-exec --no-startup-id feh --bg-fill --no-fehbg ~/Pictures/Wallpapers/space_surfer_flipped.jpg
+exec --no-startup-id feh --bg-fill --no-fehbg ~/Pictures/Wallpapers/space_surfer.jpg
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
