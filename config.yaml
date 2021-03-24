@@ -106,6 +106,9 @@ dotfiles:
   f_wallpaper_space_surfer.jpg:
     src: wallpapers/space_surfer.jpg
     dst: ~/Pictures/Wallpapers/space_surfer.jpg
+  f_dunst_dunstrc:
+    src: dunst/dunstrc
+    dst: ~/.config/dunst/dunstrc
 profiles:
   devoid:
     dotfiles:
@@ -146,3 +149,4 @@ profiles:
     - f_ranger_rifle.conf
     - f_wallpaper_space_surfer.jpg
     - f_xprofile
+    - f_dunst_dunstrc
