@@ -109,6 +109,20 @@ dotfiles:
   f_dunst_dunstrc:
     src: dunst/dunstrc
     dst: ~/.config/dunst/dunstrc
+  f_i3_lock.bash:
+    src: i3/lock.bash
+    dst: ~/.config/i3/lock.bash
+    chmod: '755'
+  f_i3_lock.png:
+    src: i3/lock.png
+    dst: ~/.config/i3/lock.png
+  f_i3_text.png:
+    src: i3/text.png
+    dst: ~/.config/i3/text.png
+  f_i3_dim-screen.sh:
+    src: i3/i3_dim-screen.sh
+    dst: ~/.config/i3/i3_dim-screen.sh
+    chmod: '755'
 profiles:
   devoid:
     dotfiles:
@@ -144,6 +158,10 @@ profiles:
     - f_bashrc
     - f_gitconfig
     - f_i3_config
+    - f_i3_dim-screen.sh
+    - f_i3_lock.bash
+    - f_i3_lock.png
+    - f_i3_text.png
     - f_kitty.conf
     - f_ranger_rc.conf
     - f_ranger_rifle.conf
