@@ -56,10 +56,10 @@ set $borderInactive #403a37
 set $borderActive   #bea897
 
 # Component             Border          Background      Text            Indicator
-client.focused          $borderActive   $borderActive   $borderActive   $borderActive
-client.focused_inactive $borderInactive $borderInactive $borderInactive $borderInactive
-client.unfocused        $borderInactive $borderInactive $borderInactive $borderInactive
-client.urgent           $color9         $color9         $color9         $color9
+client.focused          $borderActive   $borderActive   $color0         $borderActive
+client.focused_inactive $borderInactive $borderInactive $color7         $borderInactive
+client.unfocused        $borderInactive $borderInactive $color7         $borderInactive
+client.urgent           $color9         $color9         $color7         $color9
 client.background       $bg-color
 
 {%@@ endif @@%}
