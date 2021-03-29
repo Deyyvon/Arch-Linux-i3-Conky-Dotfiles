@@ -249,7 +249,7 @@ exec xss-lock --notifier=/home/synackd/.config/i3/dim-screen.sh -- /usr/bin/syst
 exec --no-startup-id nm-applet
 
 # Start the caffeine-ng applet to enable the sleep inhibitor.
-exec --no-startup-id caffeine
+exec --no-startup-id caffeine --deactivate
 
 # Automount USB drives
 exec --no-startup-id udiskie
