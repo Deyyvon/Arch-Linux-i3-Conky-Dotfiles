@@ -249,7 +249,10 @@ exec xss-lock --notifier=/home/synackd/.config/i3/dim-screen.sh -- /usr/bin/syst
 exec --no-startup-id nm-applet
 
 # Start the caffeine-ng applet to enable the sleep inhibitor.
-exec --no-startup-id caffeine-ng
+exec --no-startup-id caffeine
 
 # Automount USB drives
 exec --no-startup-id udiskie
+
+# Authentication agent for polkit
+exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
