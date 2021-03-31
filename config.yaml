@@ -123,6 +123,12 @@ dotfiles:
     src: i3/i3_dim-screen.sh
     dst: ~/.config/i3/i3_dim-screen.sh
     chmod: '755'
+  f_rofi_config.rasi:
+    src: rofi/config
+    dst: ~/.config/rofi/config.rasi
+  f_rofi_monarch.rasi:
+    src: rofi/monarch.rasi
+    dst: ~/.config/rofi/monarch.rasi
 profiles:
   devoid:
     dotfiles:
@@ -165,6 +171,8 @@ profiles:
     - f_kitty.conf
     - f_ranger_rc.conf
     - f_ranger_rifle.conf
+    - f_rofi_config.rasi
+    - f_rofi_monarch.rasi
     - f_wallpaper_space_surfer.jpg
     - f_xprofile
     - f_dunst_dunstrc

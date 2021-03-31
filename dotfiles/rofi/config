@@ -1,0 +1,7 @@
+configuration {
+	show-icons: true;
+	combi-modi: "window,drun,run,ssh";
+	theme: "~/.config/rofi/monarch.rasi";
+	match: "fuzzy";
+	terminal: "kitty";
+}
