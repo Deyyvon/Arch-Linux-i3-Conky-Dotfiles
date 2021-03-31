@@ -129,6 +129,9 @@ dotfiles:
   f_rofi_monarch.rasi:
     src: rofi/monarch.rasi
     dst: ~/.config/rofi/monarch.rasi
+  f_picom.conf:
+    src: picom/picom.conf
+    dst: ~/.config/picom/picom.conf
 profiles:
   devoid:
     dotfiles:
@@ -169,6 +172,7 @@ profiles:
     - f_i3_lock.png
     - f_i3_text.png
     - f_kitty.conf
+    - f_picom.conf
     - f_ranger_rc.conf
     - f_ranger_rifle.conf
     - f_rofi_config.rasi
