@@ -207,6 +207,7 @@ bindsym $mod+x [urgent=latest] focus
 
 # Floating windows
 for_window [class="Gcolor3"] floating enable
+for_window [class="zoom" title="Chat"] floating enable
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
