@@ -132,6 +132,10 @@ dotfiles:
   f_picom.conf:
     src: picom/picom.conf
     dst: ~/.config/picom/picom.conf
+  f_ranger_scope.sh:
+    src: ranger/scope.sh
+    dst: ~/.config/ranger/scope.sh
+    chmod: '755'
 profiles:
   devoid:
     dotfiles:
@@ -175,6 +179,7 @@ profiles:
     - f_picom.conf
     - f_ranger_rc.conf
     - f_ranger_rifle.conf
+    - f_ranger_scope.sh
     - f_rofi_config.rasi
     - f_rofi_monarch.rasi
     - f_wallpaper_space_surfer.jpg
